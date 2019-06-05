@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MIST Lab</title><link>http://mistlab.ca/</link><description>Making Innovative Space Technologies</description><atom:link href="http://mistlab.ca/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 04 Jun 2019 20:54:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Field mission in Lanzarote (Spain)</title><link>http://mistlab.ca/blog/field-mission-in-lanzarote-spain/</link><dc:creator>Giovanni Beltrame</dc:creator><description>&lt;p&gt;Our field mission with the &lt;a href="https://www.esa.int"&gt;European Space Agency&lt;/a&gt; for
+the PANGAEA-X experimental campaign was a success! We deployed 6 flying
+robots, controlled with a single tablet by one of the European astronauts. &lt;/p&gt;
+&lt;p&gt;&lt;a data-flickr-embed="true" href="https://www.flickr.com/photos/europeanastronauttraining/31030614547/in/album-72157700345404104/" title="Drone team"&gt;&lt;img src="https://farm5.staticflickr.com/4843/31030614547_7d7a175ecc_b.jpg" width="1024" height="683" alt="Drone team"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Our experiments were also featured on the science show Tomorrow Today - The
+Science Magazine. You can see the full reportage &lt;a href="https://www.dw.com/en/the-smart-swarm/av-47321115"&gt;here&lt;/a&gt;.&lt;/p&gt;</description><guid>http://mistlab.ca/blog/field-mission-in-lanzarote-spain/</guid><pubDate>Thu, 14 Mar 2019 03:17:34 GMT</pubDate></item><item><title>Circle Formation using Buzz</title><link>http://mistlab.ca/blog/circle-formation-using-buzz/</link><dc:creator>Giovanni Beltrame</dc:creator><description>&lt;p&gt;When we designed our language &lt;a href="http://the.swarming.buzz"&gt;Buzz&lt;/a&gt;, we wanted to create something that could be ported to any robot.
+We have made an initial port of Buzz for a popular robotic platform, the &lt;a href="http://www.k-team.com/mobile-robotics-products/khepera-iv"&gt;Khepera IV&lt;/a&gt;.
+The result of this port is a "glue" library that provides a set of functions for controlling the robot to the Buzz interpreter. As usual,
+we have released the (still unfinished!) code on &lt;a href="https://github.com/MISTLab/BuzzKH4"&gt;GitHub&lt;/a&gt;. The total integration work was only a couple of days'
+work, a testament to the portability of Buzz.&lt;/p&gt;
+&lt;p&gt;So we can now proudly show an example of Buzz at work: we programmed the Kheperas with a simple algorithm that, without computation,
+leads to circle formation. The algorithm itself will be the subject of a future publication. What the video shows is that the robots
+can be successfully controlled and their sensors used to perform swarming tasks:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rwNtbAXgJaQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id="credits"&gt;Credits:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Programming: &lt;a href="http://mistlab.ca/people/cpinciroli/"&gt;Carlo Pinciroli&lt;/a&gt;, &lt;a href="http://mistlab.ca/people/dstonge/"&gt;David St-Onge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href="http://mistlab.ca/people/dstonge/"&gt;David St-Onge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We would also like to thank NSERC for letting us purchase the Kheperas&lt;/li&gt;
+&lt;/ul&gt;</description><category>Buzz</category><category>swarming</category><guid>http://mistlab.ca/blog/circle-formation-using-buzz/</guid><pubDate>Wed, 10 Aug 2016 00:52:01 GMT</pubDate></item><item><title>Donation From Altera</title><link>http://mistlab.ca/blog/donation-from-altera/</link><dc:creator>Giovanni Beltrame</dc:creator><description>&lt;p&gt;I would like to thank Altera for the generous donation of their
+flagship Stratix V board. It will be used for radiation and fault
+tolerance studies.&lt;/p&gt;</description><guid>http://mistlab.ca/blog/donation-from-altera/</guid><pubDate>Tue, 24 Jun 2014 02:27:35 GMT</pubDate></item></channel></rss>

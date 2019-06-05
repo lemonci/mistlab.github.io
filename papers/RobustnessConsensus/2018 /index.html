@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html prefix="fb: http://ogp.me/ns/fb# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="On the Robustness of Consensus-based Behaviors for Robot Swarms. - Autonomous Robots (Special Issue Foundations of Resilience for Networked Robotic Systems) Supplementary material">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On the Robustness of Consensus-based Behaviors for Robot Swarms | MIST Lab</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://mistlab.ca/papers/RobustnessConsensus/2018%20/">
+<meta property="fb:app_id" content="">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="MIST Lab">
+<meta property="og:site_name" content="MIST Lab">
+<meta property="og:title" content="On the Robustness of Consensus-based Behaviors for Robot Swarms">
+<meta property="og:url" content="http://mistlab.ca/papers/RobustnessConsensus/2018%20/">
+<meta property="og:description" content="On the Robustness of Consensus-based Behaviors for Robot Swarms. - Autonomous Robots (Special Issue Foundations of Resilience for Networked Robotic Systems) Supplementary material">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-04-27T12:14:00Z">
+<meta name="author" content="MIST Lab">
+<meta property="og:site_name" content="MIST Lab">
+<meta property="og:title" content="On the Robustness of Consensus-based Behaviors for Robot Swarms">
+<meta property="og:url" content="http://mistlab.ca/papers/RobustnessConsensus/2018%20/">
+<meta property="og:description" content="On the Robustness of Consensus-based Behaviors for Robot Swarms. - Autonomous Robots (Special Issue Foundations of Resilience for Networked Robotic Systems) Supplementary material">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-04-27T12:14:00Z">
+<meta name="description" itemprop="description" content="On the Robustness of Consensus-based Behaviors for Robot Swarms. - Autonomous Robots (Special Issue Foundations of Resilience for Networked Robotic Systems) Supplementary material">
+</head>
+<body>
+
+  <!-- Menubar -->
+  <nav class="navbar navbar-default navbar-fixed-top page-scroll" role="navigation"><div class="container">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	</button>
+	<!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+	<a href="../../../"><img src="../../../images/mistlogo.svg" alt="MIST Lab" id="logo" height="50"></a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse page-scroll">
+	<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="../../../">Home</a>
+                </li>
+<li>
+<a href="../../../about/">About</a>
+                </li>
+<li>
+<a href="../../../about/#people">People</a>
+                </li>
+<li>
+<a href="../../../blog/">Blog</a>
+                </li>
+<li>
+<a href="../../../projects/">Projects</a>
+                </li>
+<li>
+<a href="../../../publications/">Publications</a>
+                </li>
+<li>
+<a href="../../../join/">Join MIST</a>
+
+	  
+	</li>
+</ul>
+</div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav><div class="container">
+  
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="page-header" itemprop="headline name">On the Robustness of Consensus-based Behaviors for Robot Swarms</h1>
+
+        
+
+    </header><nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../../../">home</a></li>
+        <li><a href="../../">papers</a></li>
+        <li><a href="../">RobustnessConsensus</a></li>
+        <li><a href=".">2018%20</a></li>
+        <li><a href="#"></a></li>
+</ul></nav><div itemprop="articleBody text">
+    <h2> Autonomous Robots (Special Issue Foundations of Resilience for Networked Robotic Systems) Supplementary material</h2>
+
+
+    <div class="panel panel-default">
+
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                    <h2 class="panel-title">Model Performance </h2>
+            </div>
+            <div class="panel-body">
+        <pre style="float:right;width:50%;margin-left:20px;margin-top:100px;"><code>
+    VSKEY = 1
+    vs_value = id
+    ROBOTS = 10
+    <strong> # The robot with the highest id (10) is elected as a leader </strong>
+    function init() {
+        <strong> # Create a virtual stigmergy </strong>
+        vs = stigmergy.create(VSKEY)
+        <strong> # Set onconflict manager </strong>
+        vs.onconflict(function(k,l,r) {
+        <strong> # Return local value if </strong>
+        <strong> # - Remote value is smaller than local, OR </strong>
+        <strong> # - Values are equal, robot of remote record is smaller than local one </strong>
+        if(r.data &lt; l.data or (r.data == l.data and r.robot &lt; l.robot)) {
+            return l
+        }
+        <strong># Otherwise return remote value </strong>
+        else return r
+        })
+        <strong> # Initialize vstig </strong>
+        vs.put(VSKEY, vs_value)
+        set_leds(255,0,0)
+    }
+    function step() {
+        <strong> # Get current value </strong>
+        start_timer()
+        vs_value = vs.get(VSKEY)
+        <strong> # If the vs_value corresponds to the highest id </strong>
+        if (vs_value == ROBOTS) {
+            stop_timer()
+            log ("I am robot ", id , "my vs_value is", vs_value, "I reached consensus")
+            set_leds(0,255,0)
+        }
+    }
+    }</code></pre>
+    <p style="text-align:justify;">As discussed in the paper, we have used Statistical Model Checking (SMC) [1] to model and assess the robustness of consensus-based behaviors. In a nutshell, our solution models a robot swarm as a network of priced timed automata NPTA [2]. Each robot in the swarm is represented by a single PTA [2] and is able to communicate its state with its neighborhood. The model is weighted by a set of parameters used to assess the impact of the communication quality and robots’ defects on the consensus behavior of the swarm. Our model is depicted in the figure below. We have studied the performance of our solution by comparing it with a physics-based simulator (ARGoS) [3] and real-world experiments. We have collected the time to convergence while degrading the communication quality (i.e., increasing packet lost probability). The simulations in the three testing environments are performed on an elect leader scenario implemented in a domain specific language Buzz (see the code on the right). The packet loss value is selected from [0%; 25%; 50%; 75%; 95%] and the swarm size is chosen from [5,10].</p>
+
+       <p style="text-align:justify;"> In ARGoS, we have conducted 500 simulations on cluster, scale free and line swarms with different packet loss probabilities, that is 100 simulations for each packet loss probability. The same has been done in the real word experiments where we used a set of of Khepera IV robots [4] connected by a standard 2.4GHz wireless network.</p>
+
+       <p style="text-align:justify;"> The following figures depict a comparison between our proposed model (SMC model), ARGoS and real-world experiments. For the 3 studied topologies (Cluster, Scale-free and Line), the figures show that our model exhibits a convergence time similar to what was recorded using ARGoS and Kheperas. These results confirm that our SMC model is representative of the real robot behavior.</p>
+        <img src="../2018%20/PTA_generic.png" class="img-responsive" alt="5-robot cluster topology align=" left width="45%" height="10%"><hr>
+<h3>Cluster Topology</h3>
+
+                    <table><tr>
+<td>
+                                            <h4>5-robot cluster topology</h4>
+                                            <img src="../2018%20/Cluster5.png" class="img-responsive" alt="5-robot cluster topology">
+</td>
+                                    <td>
+                                            <h4>10-robot cluster topology</h4>
+                                            <img src="../2018%20/Cluster10.png" class="img-responsive" alt="10-robot cluster topology">
+</td>
+                            </tr></table>
+<hr>
+<h3>Line Topology</h3>
+
+
+
+                    <table><tr>
+<td>
+                                            <h4>5-robot line topology</h4>
+                                            <img src="../2018%20/Line5.png" class="img-responsive" alt="5-robot line topology">
+</td>
+                                    <td>
+                                            <h4>10-robot line topology</h4>
+                                            <img src="../2018%20/Line10.png" class="img-responsive" alt="10-robot line topology">
+</td>
+                            </tr></table>
+<hr>
+<h3>Scale-Free Topology</h3>
+
+                    <table><tr>
+<td>
+                                            <h4>5-robot scale-free topology</h4>
+                                            <img src="../2018%20/Scalefree5.png" class="img-responsive" alt="5-robot scale-free topology">
+</td>
+                                    <td>
+                                            <h4>10-robot scale-free topology</h4>
+                                            <img src="../2018%20/Scalefree10.png" class="img-responsive" alt="10-robot scale-free topology">
+</td>
+                            </tr></table>
+</div>
+
+
+<div class="panel-heading">
+    <h2 class="panel-title"> References </h2>
+</div>
+    <br><ol>
+<li> Bulychev, Peter, et al. "UPPAAL-SMC: Statistical model checking for priced timed automata." arXiv preprint arXiv:1207.1272 (2012).</li>
+        <li> David, Alexandre, et al. "Statistical model checking for networks of priced timed automata." International Conference on Formal Modeling and Analysis of Timed Systems. Springer, Berlin, Heidelberg, 2011.</li>
+        <li> Pinciroli, Carlo, et al. "ARGoS: a modular, multi-engine simulator for heterogeneous swarm robotics." Intelligent Robots and Systems (IROS), 2011 IEEE/RSJ International Conference on. IEEE, 2011.</li>
+        <li> Khepera IV, https://www.k-team.com/mobile-robotics-products/khepera-iv/introduction, Last Visit: 28-05-2018.</li>
+        </ol>
+</div>
+</div>
+
+    
+    </div>
+</article>
+</div>
+
+  <div class="container">
+    <hr>
+<div class="row">
+      <div class="col-lg-9">
+	Contents © 2019         <a href="mailto:info@mistlab.ca">MIST Lab</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+	
+      </div>
+      <!-- JavaScript -->
+      
+            <script src="../../../assets/js/all-nocdn.js"></script><div class="col-lg-3">
+                  <ul class="list-unstyled list-inline list-social-icons">
+<li>Follow us:</li>
+                    <li class="tooltip-social facebook-link">
+<a href="https://www.facebook.com/mistlab.ca" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social twitter-link">
+<a href="https://twitter.com/MIST_lab" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social google-plus-link">
+<a href="https://google.com/+MistlabCa" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                  </ul>
+</div>
+
+    
+    </div>
+  </div>
+  <!-- /.container -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40192557-1', 'mistlab.ca');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

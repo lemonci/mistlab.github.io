@@ -1,0 +1,63 @@
+<%block name="content">
+% for i in range(len(people)):
+%     if not i % 3:
+<div class="row">
+%     endif
+%     if 'Columns' in people[i]:
+<div class="${people[i]['Columns']}">
+%     else:
+<div class="col-sm-4">
+%     endif
+                <a href="${people[i]['href']}"><img class="img-responsive" src="${people[i]['Image']}"></a>
+		% if 'Director' in people[i]['Occupation']:
+                <h3 class="text-danger">${people[i]['Name']}
+		  <small class="text-primary">${people[i]['Occupation']}</small>
+                % else:
+                <h3>${people[i]['Name']}
+		    <small>${people[i]['Occupation']}</small>
+		% endif
+		</h3>                
+                <p>${people[i]['Tagline']}</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+		    % if 'Facebook' in people[i]:
+                    <li class="tooltip-social facebook-link"><a href="${people[i]['Facebook']}" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+		    % endif
+		    % if 'Linkedin' in people[i]:
+                    <li class="tooltip-social linkedin-link"><a href="${people[i]['Linkedin']}" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+		    % endif
+		    % if 'Twitter' in people[i]:
+                    <li class="tooltip-social twitter-link"><a href="${people[i]['Twitter']}" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+		    % endif
+		    % if 'GPlus' in people[i]:
+                    <li class="tooltip-social google-plus-link"><a href="${people[i]['GPlus']}" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+		    % endif
+                </ul>
+            </div>
+%     if  i % 3 == 2:
+</div>
+%     endif
+% endfor
+% if  i % 3 != 2:
+</div>
+% endif
+<h2 class="page-header">Former members</h2>
+<ul>
+<li><a href="http://ca.linkedin.com/pub/oana-neagu/89/958/77a">Oana Neagu</a> (Intern)</li>
+<li><a href="http://fr.linkedin.com/pub/florian-fougeanet/5b/915/927/en>">Florian Fougeanet</a> (Intern)</li>
+<li><a href="http://fr.linkedin.com/pub/deboleena-roy/16/253/598>">Deboleena Roy</a> (MITACS Globalink Intern)</li>
+<li><a href="http://fr.linkedin.com/pub/ben-ali-ismail/5b/483/128/en>">Ismail Ben Ali Ouriaghli</a> (UPIR Intern)</li>
+<li><a href="http://nl.linkedin.com/in/robertapiscitelli>">Roberta Piscitelli</a> (PBEEE Visiting Scholar)</li>
+<li><a href="http://fr.linkedin.com/pub/mika%C3%ABl-capelle/5b/880/131/en>">Mikael Capelle</a> (Intern)</li>
+% for i in range(len(alumni)):
+%     if 'Linkedin' in alumni[i]:
+<li><a href="${alumni[i]['Linkedin']}">${alumni[i]['name']}</a> (${alumni[i]['Occupation']})</li>
+%     else:
+<li><a href="${alumni[i]['href']}">${alumni[i]['name']}</a> (${alumni[i]['Occupation']})</li>
+%     endif
+%endfor
+</ul>
+</%block>

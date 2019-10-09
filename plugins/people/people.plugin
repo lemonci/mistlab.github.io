@@ -1,0 +1,10 @@
+[Core]
+Name = rest_people
+Module = people
+
+[Documentation]
+Author = Giovanni Beltrame
+Version = 0.1
+Website = http://mistlab.ca
+Description = Compiles a people table
+

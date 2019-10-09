@@ -1,0 +1,9 @@
+[Core]
+Name = rest_bibtex
+Module = bibtex
+
+[Documentation]
+Author = Giovanni Beltrame
+Version = 0.1
+Website = http://mistlab.ca
+Description = Compiles a bibliography from a BibTeX file

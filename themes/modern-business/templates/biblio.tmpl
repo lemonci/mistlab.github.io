@@ -1,0 +1,73 @@
+<%block name="content">
+<style>
+
+body {
+    counter-reset: list;
+}
+
+ol {
+    margin: 0;
+}
+
+ol > li {
+    list-style: none;
+    position: relative;
+}
+
+ol > li:before {
+    counter-increment: list;
+    content: "[" counter(list, decimal) "] ";
+    position: absolute;
+    left: -2.4em;
+}
+</style>
+<script type="text/javascript">
+    function disp(s,k) {
+    document.getElementById("stuff").innerHTML = s;
+    $('#myModal .modal-body').html(s);
+    $('#myModal .modal-title').html(k);
+    $('#myModal').modal('show');
+    }
+</script>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Bibtex</h4>
+      </div>
+      <div id="stuff" class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%
+   def myescape(txt):
+      txt = "<pre>"+txt+"</pre>"
+      txt = txt.replace('\n','\\n')
+      return txt.replace('\"','"')
+%>
+
+<section id="content" class="body">
+    % for k, pub in publications.items():
+    <h3>${k}</h3>
+    <ol>
+    % for key, text, bibtex, pdf, url,slides, poster in pub:
+    <li id="${key}">${text} &#91;<a href="javascript:disp('${bibtex|h,myescape}','${key}');">bib</a>&#93;
+    % for label, target in [('PDF', pdf),('URL',url), ('Slides', slides), ('Poster', poster)]:
+      % if target:
+      &#91;<a href="${target}">${label}</a>&#93;
+      % endif
+    % endfor
+    </li>
+    % endfor
+    </ol>
+    % endfor
+</section>
+</%block>

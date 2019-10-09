@@ -1,0 +1,69 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*" />
+<%namespace name="notes" file="annotation_helper.tmpl" import="*" />
+${set_locale(lang)}
+${base.html_headstart()}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%block name="extra_head">
+### Leave this block alone.
+</%block>
+${template_hooks['extra_head']()}
+</head>
+
+<body>
+
+  <!-- Menubar -->
+  <nav class="navbar navbar-default navbar-fixed-top page-scroll" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	</button>
+	<!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+	<a href="/"><img src="${logo_url}" alt="${blog_title}" id="logo" height="50"/></a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse page-scroll">
+	<ul class="nav navbar-nav navbar-right">
+	  ${base.html_navigation_links()}
+	  ${template_hooks['menu']()}
+	</ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <%block name="belowmenu"></%block>
+
+  ${template_hooks['page_header']()}
+
+
+  <div class="container">
+  <%block name="content">
+  </%block>
+  </div>
+
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-lg-9">
+	${content_footer}
+	${template_hooks['page_footer']()}
+      </div>
+      <!-- JavaScript -->
+      ${base.late_load_js()}    
+    </div>
+  </div>
+  <!-- /.container -->
+
+${body_end}
+${template_hooks['body_end']()}
+</body>
+
+</html>

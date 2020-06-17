@@ -6,5 +6,5 @@
 .. description: 
 .. type: text
 
-.. publication_list:: /home/beltrame/Documents/Grants/CommonCV/out.bib
+.. publication_list:: out.bib
    :detail_page_dir:

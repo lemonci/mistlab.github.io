@@ -7,9 +7,5 @@ jobs:
     steps:
     - name: Check out
       uses: actions/checkout@v2
-    - name: Install dependencies
-      run: |
-        python3 -m pip install --upgrade pip
-        pip3 install --upgrade pybtex
     - name: Build and Deploy Nikola
       uses: getnikola/nikola-action@v2

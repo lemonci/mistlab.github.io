@@ -5,7 +5,7 @@
 .. link: http://www.mistlab.ca/papers/CollectiveTransport
 .. description: Supplementary material
 
-`Supplementery Material PDF <supplementary.pdf>`_
+`Supplementary Material PDF <supplementary.pdf>`_
 -------------------------------------------------
 
 .. raw:: html

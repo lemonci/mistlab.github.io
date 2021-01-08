@@ -5,7 +5,7 @@
 .. link: http://www.mistlab.ca/papers/MaxConvNet
 .. description: Supplementary material
 
-`Supplementery Material PDF <supplementary.pdf>`_
+`Supplementary Material PDF <supplementary.pdf>`_
 -------------------------------------------------
 
 

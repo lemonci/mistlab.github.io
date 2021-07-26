@@ -5,7 +5,6 @@
 .. link: http://www.mistlab.ca/papers/Portiloop
 .. description: Paper
 
-`Supplementary Material PDF <supplementary_portiloop.pdf>`_
------------------------------
+`Supplementary Material PDF <supplementary_portiloop.pdf>`
 
 

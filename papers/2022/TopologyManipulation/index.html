@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html prefix="fb: http://ogp.me/ns/fb# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Topology Manipulation - Supplementary Material | MIST Lab</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://mistlab.ca/papers/2022/TopologyManipulation/">
+<meta property="fb:app_id" content="">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="MIST Lab">
+<meta property="og:site_name" content="MIST Lab">
+<meta property="og:title" content="Local Topology Manipulation - Supplementary Material">
+<meta property="og:url" content="http://mistlab.ca/papers/2022/TopologyManipulation/">
+<meta property="og:description" content="Supplementary Material
+We provide extra information for the experiments and results in the paper. 
+
+
+Decentralised rules for robots to form Line and star
+
+1. Line formation
+The line topology is a spec">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-09-26T13:45:07-04:00">
+<meta name="author" content="MIST Lab">
+<meta property="og:site_name" content="MIST Lab">
+<meta property="og:title" content="Local Topology Manipulation - Supplementary Material">
+<meta property="og:url" content="http://mistlab.ca/papers/2022/TopologyManipulation/">
+<meta property="og:description" content="Supplementary Material
+We provide extra information for the experiments and results in the paper. 
+
+
+Decentralised rules for robots to form Line and star
+
+1. Line formation
+The line topology is a spec">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-09-26T13:45:07-04:00">
+</head>
+<body>
+
+  <!-- Menubar -->
+  <nav class="navbar navbar-default navbar-fixed-top page-scroll" role="navigation"><div class="container">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	</button>
+	<!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+	<a href="../../../"><img src="../../../images/mistlogo.svg" alt="MIST Lab" id="logo" height="50"></a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse page-scroll">
+	<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="../../../">Home</a>
+                </li>
+<li>
+<a href="../../../about/">About</a>
+                </li>
+<li>
+<a href="../../../about/#people">People</a>
+                </li>
+<li>
+<a href="../../../blog/">Blog</a>
+                </li>
+<li>
+<a href="../../../projects/">Projects</a>
+                </li>
+<li>
+<a href="../../../publications/">Publications</a>
+                </li>
+<li>
+<a href="../../../join/">Join MIST</a>
+
+	  
+	</li>
+</ul>
+</div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav><div class="container">
+  
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="page-header" itemprop="headline name">Local Topology Manipulation - Supplementary Material</h1>
+
+        
+
+    </header><nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../../../">home</a></li>
+        <li><a href="../../">papers</a></li>
+        <li><a href="../">2022</a></li>
+        <li><a href=".">TopologyManipulation</a></li>
+        <li><a href="#"></a></li>
+</ul></nav><div itemprop="articleBody text">
+    <h1 id="supplementary-material">Supplementary Material</h1>
+<p>We provide extra information for the experiments and results in the paper. </p>
+<!-- \section{Appendix}\label{Appendix}
+In this section, we provide extra information required for replicating the results in Section~\ref{sec:Exp} and the simulation codes are available on our repository\footnote{\href{https://git.mistlab.ca/skarthik/local-operations-on-trees}{https://git.mistlab.ca/skarthik/local-operations-on-trees}}. -->
+
+<h2 id="decentralised-rules-for-robots-to-form-line-and-star">Decentralised rules for robots to form Line and star</h2>
+<hr>
+<h3 id="1-line-formation">1. Line formation</h3>
+<p>The line topology is a special topology, where all the robots have either one neighbor (the ends of the line) and all other robots have two neighbors. The rules that the robots have to follow to form a line are:  </p>
+<ul>
+<li>
+<p>Robots with <strong>degree(robot)&gt;2</strong> to be called Leaf transferer will do a random leaf transfer or super leaf transfer operation. For this they need at least two of their neighbors to be free (i.e., not involved in any other operation). To avoid getting caught in loops the leaf/super leaf remembers the previous leaf transferer and passes this information to the current leaf transferer. The leaf transferer, therefore, doesn't transfer the leaf or super leaf to the previous leaf transferer.</p>
+</li>
+<li>
+<p>Robots with exactly two neighbors try to straighten the angle between their neighbors by moving towards a direction so as to reduce the obtuse angle.  </p>
+</li>
+</ul>
+<p>The parameters used for line formation experiment are $R_{transfer} = 1m$, <em>R_{mission} = 1.5m</em>, $R_{range} = 2.5m$. </p>
+<hr>
+<h3 id="2-star-formation">2. Star formation</h3>
+<p>We consider a single root star formation. In star topology, all the robots except the root have one neighbor and the root has $N-1$ neighbors. The rules that the robots have to follow to form a line are:  </p>
+<ul>
+<li>Each robot connected to the root with more than one neighbor is called a leaflizer, which leaflizes with the root by transferring all its neighbors to the root.  </li>
+<li>The root calculates the angles between its leaves and informs them about the direction to make these angles equal.</li>
+</ul>
+<p>This table shows the parameters used in the star formation experiments.</p>
+<table>
+<thead><tr>
+<th>No of robots</th>
+<th>$R_{range}$(m)</th>
+<th>$R_{transfer}$(m)</th>
+<th>$R_{Mission}$</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>15</td>
+<td>2.5</td>
+<td>1</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>30</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>60</td>
+<td>10</td>
+<td>4</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="verification-of-theorem-and-lemma">Verification of Theorem and Lemma</h2>
+<h3 id="an-example-for-conversion-from-one-tree-to-another-tree-with-prufer-sequence">An example for conversion from one tree to another tree with Prufer Sequence</h3>
+<p>This shows an example as to how to use the prufer sequences and the operations to converrt from any initial tree to final tree. </p>
+<p><img alt="Example-12" src="https://user-images.githubusercontent.com/47322496/179253692-27db898f-b635-484e-ba93-de5220ed956e.png"></p>
+<hr>
+<h3 id="test_theoremipynb"><code>test_theorem.ipynb</code></h3>
+<p>In order to verify transformation of trees, we implemented a script in python which verifies the conversion of all possible topologies for a swarm of size 10 to a specific random topology. We also verify that from a random topology it is possible to convert to all other possible topologies. </p>
+<hr>
+<h3 id="test_theorem_line_staripynb"><code>test_theorem_line_star.ipynb</code></h3>
+<p>We also have verified this algorithm in a python script where starting from any random topology we were able to form a star/line for a swarm of size 10 for all the possible $10^8$ combinations. </p>
+<hr>
+<h2 id="supplementary-plots-for-the-experiments">Supplementary plots for the experiments</h2>
+<p><img alt="DARS2022_paper_9102-2-10(1)" src="https://user-images.githubusercontent.com/47322496/190194702-f57e9ee3-b5fd-492a-ba48-8d9bb8b18aff.png"><img alt="DARS2022_paper_9102-2-11(1)" src="https://user-images.githubusercontent.com/47322496/190194705-6338c10d-d549-4aae-845b-ff5c8a79aaa7.png"></p>
+<p>% Figures~\ref{fig:line_formation} and \ref{fig:star_formation} depict
+% $\lambda_2$, coverage area, and progress of operations. We plot the time
+% evolution of $\lambda_2$ of the graph and the maintained spanning tree, as a connectivity index and a parameter specifying consensus rate. </p>
+<p>% The evolution of the number of nodes with $\text{degree(robot)}=1$ (i.e., having only one
+% neighbor) and $\text{degree(robot)}=2$ is sketched for the line formation and
+% the evolution of the number of nodes with $\text{degree(robot)}=1$ and nodes
+% with $\text{degree(robot)}\geq2$ for the star formation, which is a progress
+% index in each case. The $\lambda_2$ of the manipulated spanning tree and the
+% whole graph examine the connectivity awareness of our method which has to stay
+% greater than zero over the experiment. In the specific case of line, $\lambda_2$
+% of the tree reduces with time and reaches a constant value when the line has
+% been straightened out. Also, $\lambda_2$ of the graph will approach the same
+% value, if $R_{\text{mission}}$ is close to $R_{\text{range}}$, which is the minimum for a
+% given connected graph of $N$ nodes. However, In the case of the star topology,
+% $\lambda_2$ of the tree increases to a constant value of one at the end of the
+% experiment no matter the number of nodes in the system, and the $\lambda_2$ of
+% the graph increases. If $R_{\text{mission}}&lt;R_{\text{range}}/2$ it would have approached an
+% all to all graph which has the maximum $\lambda_2$ for a given connected graph
+% of $N$ nodes. The coverage area has been shown to decrease for the star and to
+% increase for the line case which is showing the trade-off between $\lambda_2$
+% and the coverage area and that is why topology manipulation is needed to provide
+% flexibility. Furthermore, for the star formation, we have plotted the number of
+% nodes with $\text{degree(robot)}=1$ and the number of nodes with
+% $\text{degree(robot)}\geq2$. This is to show that the manipulation operations
+% are changing the topology closer to the star topology with time. The number of
+% nodes with $\text{degree(robot)}=1$ for the star case increases to $N-1$ and
+% there is exactly one node that has $N-1$ neighbors, which is the root. The plots
+% show the evolution of these metrics which is increasing for the number of nodes
+% with $\text{degree(robot)}=1$ and decreasing for the number of nodes with
+% $\text{degree(robot)}\geq2$. For line formation, we have shown a similar metric
+% that reduces to 2 for the number of nodes $\text{degree(robot)}=1$ and increases
+% to $N-2$ for the number of nodes $\text{degree(robot)}=2$ which is the
+% definition of a line topology.</p>
+<h2 id="setting-up-the-simlations-for-line-and-star-in-argos3-and-buzz">Setting up the simlations for Line and Star in Argos3 and Buzz.</h2>
+<p>ARGoS3 Simulator ARGoS3 simulator can also be installed from binaries please refer to the official website for more information: https://www.argos-sim.info/
+The instructions below are for installing ARGoS3 from its source.
+Official code repository: https://github.com/ilpincy/argos3
+Dependencies for ARGoS3 can be installed using the following command:</p>
+<pre><code>sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
+qt5-default freeglut3-dev libxi-dev libxmu-dev liblua5.3-dev \
+lua5.3 doxygen graphviz graphviz-dev asciidoc
+</code></pre>
+<p>Installations for Argos3 </p>
+<pre><code>$ git clone https://github.com/ilpincy/argos3.git argos3
+$ cd argos3
+$ mkdir build_simulator
+$ cd build_simulator
+$ cmake ../src
+$ make
+$ sudo make install
+</code></pre>
+<p>Installations for Buzz</p>
+<pre><code>$ cd Buzz
+$ mkdir build
+$ cd build
+$ cmake ../src
+$ sudo make install
+$ sudo ldconfig
+</code></pre>
+<p>Installations for Khepera V</p>
+<pre><code>$ git clone https://github.com/ilpincyargos3-kheperaiv.git
+$ mkdir build_sim
+$ cd build_sim
+$ cmake -DCMAKE_BUILD_TYPE=Release ../src
+$ make
+$ sudo make install
+</code></pre>
+<p>Building the loop function for ARGoS:</p>
+<pre><code>$ cd files/loop_fun_src/
+$ mkdir build
+$ cd build/
+$ cmake ..
+$ make
+</code></pre>
+<p>Building the buzz script. </p>
+<pre><code>$ cd buzz_scripts
+$ bzzc leaf_transfer2.bzz/leaflize_15.bzz/leaflize_30.bzz/leaflize_60.bzz
+# for line/star_15/star_30/star_60
+</code></pre>
+<pre><code>To run the Argos3 file. 
+argos3 -c files/star.argos # for 15 robots
+argos3 -c files/line.argos # for 15 robots
+</code></pre>
+    </div>
+</article>
+</div>
+
+  <div class="container">
+    <hr>
+<div class="row">
+      <div class="col-lg-9">
+	Contents © 2022         <a href="mailto:info@mistlab.ca">MIST Lab</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+	
+      </div>
+      <!-- JavaScript -->
+      
+            <script src="../../../assets/js/all-nocdn.js"></script><div class="col-lg-3">
+                  <ul class="list-unstyled list-inline list-social-icons">
+<li>Follow us:</li>
+                    <li class="tooltip-social facebook-link">
+<a href="https://www.facebook.com/mistlab.ca" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social twitter-link">
+<a href="https://twitter.com/MIST_lab" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="tooltip-social google-plus-link">
+<a href="https://google.com/+MistlabCa" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                  </ul>
+</div>
+
+    
+    </div>
+  </div>
+  <!-- /.container -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40192557-1', 'mistlab.ca');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

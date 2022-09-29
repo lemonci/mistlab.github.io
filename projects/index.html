@@ -8,7 +8,18 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://mistlab.ca/projects/">
 <meta property="fb:app_id" content="">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta charset="utf-8">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="MIST Lab">
 <meta property="og:site_name" content="MIST Lab">
@@ -18,16 +29,13 @@
 
 
 
-
 [TOC]
 
 
 Current
 
-
 Swarm Robotics Programming Language
-Swarm robotics originates from the intersection of swarm intelligence
-and collective robotics. Swarm robotics systems are envisioned ">
+Swarm robotics originates from the intersection of swarm intelligence and collective robotics. Swarm robotics systems are envisioned fo">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2014-06-10T15:57:26-04:00">
 <meta name="author" content="MIST Lab">
@@ -38,16 +46,13 @@ and collective robotics. Swarm robotics systems are envisioned ">
 
 
 
-
 [TOC]
 
 
 Current
 
-
 Swarm Robotics Programming Language
-Swarm robotics originates from the intersection of swarm intelligence
-and collective robotics. Swarm robotics systems are envisioned ">
+Swarm robotics originates from the intersection of swarm intelligence and collective robotics. Swarm robotics systems are envisioned fo">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2014-06-10T15:57:26-04:00">
 </head>
@@ -108,45 +113,36 @@ and collective robotics. Swarm robotics systems are envisioned ">
         <li><a href=".">projects</a></li>
         <li><a href="#"></a></li>
 </ul></nav><div itemprop="articleBody text">
-    <div class="pull-right panel panel-primary">
+    <!--
+.. title: Projects
+.. slug: projects
+.. date: 2014-06-10 15:57:26 UTC-04:00
+.. tags: 
+.. link: 
+.. description: 
+.. type: text
+-->
+<div class="pull-right panel panel-primary" data-markdown="0">
 <div class="panel-heading">
-
-<h3 class="panel-title">Contents</h3>
-
+<h3 class="panel-title">
+Contents
+</h3>
 </div>
-
-<div class="panel-body">
-<br>
-[TOC]
-
+<div class="panel-body" data-markdown="span">
+<p>[TOC]</p>
+</div>
 </div>
 <h1 id="current">Current</h1>
-</div>
 <hr>
 <h2 id="swarm-robotics-programming-language"><a href="http://the.swarming.buzz">Swarm Robotics Programming Language</a></h2>
-<p>Swarm robotics originates from the intersection of swarm intelligence
-and collective robotics. Swarm robotics systems are envisioned for
-large-scale application scenarios that require reliable, scalable, and
-autonomous behaviours. Among the many hurdles facing the deployment of
-swarm robotics systems, one of the most important is the lack of
-dedicated tools, especially regarding software. In particular, one
-problem that has received little attention in the literature is
-programmability. The current practice typically follows a bottom-up
-approach, whereby the focus is on individual behaviours and low-level
-interactions. This approach burdens developers with unnecessary
-detail, slowing both the development process and the advancement of
-the research field as a whole.  The main goal of this project is to
-investigate approaches to realize a programming language specifically
-designed for swarm robotics.
-The official site for the language is <a href="http://the.swarming.buzz/">here</a>,
-code and tools can be downloaded from <a href="http://github.com/mistlab/buzz">Github</a>.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WAlS7a7_BaM" frameborder="0" allowfullscreen></iframe>
-
+<p>Swarm robotics originates from the intersection of swarm intelligence and collective robotics. Swarm robotics systems are envisioned for large-scale application scenarios that require reliable, scalable, and autonomous behaviours. Among the many hurdles facing the deployment of swarm robotics systems, one of the most important is the lack of dedicated tools, especially regarding software. In particular, one problem that has received little attention in the literature is programmability. The current practice typically follows a bottom-up approach, whereby the focus is on individual behaviours and low-level interactions. This approach burdens developers with unnecessary detail, slowing both the development process and the advancement of the research field as a whole. The main goal of this project is to investigate approaches to realize a programming language specifically designed for swarm robotics. The official site for the language is <a href="http://the.swarming.buzz/">here</a>, code and tools can be downloaded from <a href="http://github.com/mistlab/buzz">Github</a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WAlS7a7_BaM" frameborder="0" allowfullscreen>
+</iframe>
 <h3 id="select-publications">Select Publications</h3>
 <ul>
 <li>Carlo Pinciroli and Giovanni Beltrame. Buzz: a programming language for robot swarms. IEEE Software, 33(4):97–100, July/August 2016.</li>
 <li>Carlo Pinciroli and Giovanni Beltrame. Buzz: an extensible programming language for heterogeneous swarm robotics. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2016), October 2016.</li>
-<li>Carlo Pinciroli, Adam Lee-Brown, and Giovanni Beltrame. A tuple space for data sharing in robot swarms. In 9th EAI International Conference on Bio-inspired Information and Communications Technologies (BICT 2015). ACM Digital Library, 2015. </li>
+<li>Carlo Pinciroli, Adam Lee-Brown, and Giovanni Beltrame. A tuple space for data sharing in robot swarms. In 9th EAI International Conference on Bio-inspired Information and Communications Technologies (BICT 2015). ACM Digital Library, 2015.</li>
 </ul>
 <h3 id="students-research-staff">Students &amp; Research Staff</h3>
 <ul>
@@ -167,202 +163,86 @@ code and tools can be downloaded from <a href="http://github.com/mistlab/buzz">G
 <h1 id="past">Past</h1>
 <hr>
 <h2 id="an-internet-of-things-platform-for-humanitarian-aid">An Internet-of-Things Platform for Humanitarian Aid</h2>
-<p>The aim of this project is to investigate novel approaches to create a
-self-organizing Internet-of-Things (IoT) platform to help first
-responders deal with the lack of communication and failing
-infrastructure in disaster areas. 
-This is a strategic area for Canada, as we are currently on the verge
-of a new technology revolution---embedded devices and autonomous
-systems are becoming more and more present in our everyday
-lives. Communication, automation, and HCI are an enabling
-technology for many kinds of safety-critical applications, with our
-target of first response being one of the major drivers. Other
-examples of applications are industrial and agricultural monitoring,
-autonomous cars, and medical applications.</p>
-<p>Our long-term objective is to construct a principled approach to the
-development of a self-organizing platform that mixes heterogeneous
-mobile systems, the cloud, and provides an intuitive interface for
-users and decision makers.</p>
-<h3 id="students-research-staff_1">Students &amp; Research Staff</h3>
+<p>The aim of this project is to investigate novel approaches to create a self-organizing Internet-of-Things (IoT) platform to help first responders deal with the lack of communication and failing infrastructure in disaster areas. This is a strategic area for Canada, as we are currently on the verge of a new technology revolution—embedded devices and autonomous systems are becoming more and more present in our everyday lives. Communication, automation, and HCI are an enabling technology for many kinds of safety-critical applications, with our target of first response being one of the major drivers. Other examples of applications are industrial and agricultural monitoring, autonomous cars, and medical applications.</p>
+<p>Our long-term objective is to construct a principled approach to the development of a self-organizing platform that mixes heterogeneous mobile systems, the cloud, and provides an intuitive interface for users and decision makers.</p>
+<h3 id="students-research-staff-1">Students &amp; Research Staff</h3>
 <ul>
 <li>
 <a href="../people/lgianoli">Luca Giovanni Gianoli</a> (Postdoc)</li>
 <li>
 <a href="../people/dstonge/">David St-Onge</a> (Postdoc)</li>
 </ul>
-<h3 id="sponsors_1">Sponsors</h3>
+<h3 id="sponsors-1">Sponsors</h3>
 <p><img src="../images/humanitas.png" alt="Humanitas" height="100px"><img src="../images/NSERC.jpg" alt="NSERC" height="100px"></p>
 <hr>
 <h2 id="adaptive-computing-systems-for-aerospace">Adaptive Computing Systems for Aerospace</h2>
-<p>Today’s computer systems are growing more and more complex at a pace
-that requires the development of novel and more effective
-methodologies to automate their design. Space, in particular,
-represents a challenging environment: without an atmosphere to protect
-from ionizing or particle radiation, current CMOS-based electronics
-are subject to transients faults, generalized performance reduction,
-accelerated wear, and, ultimately, unrecoverable system
-failure. Traditional approaches adopted to guarantee reliability and
-extended lifetime are based on redundancy which is fixed at
-design-time. However, these solutions are expensive in terms of
-resources and require a careful trade-off, because they increase
-complexity and area of the system, exposing it to a higher risk of
-overheating and radiation effects. Moreover, systems that are
-critical, time-constrained and where access is limited must be able to
-cope with situations where they cannot rely on human
-intervention. Therefore, there is an emerging interest in computer
-systems with adaptive capabilities that would be especially suited for
-novel high-performance embedded devices for aerospace.</p>
-<p>Our aim is improving efficiency, fault-tolerance, and computational
-capabilities of aerospace computer systems. In our vision, this
-research will allow the creation of a new generation of computing
-systems that autonomously perform their tasks for longer periods of
-time, fostering simpler and cheaper space exploration.</p>
-<h3 id="select-publications_1">Select Publications</h3>
+<p>Today’s computer systems are growing more and more complex at a pace that requires the development of novel and more effective methodologies to automate their design. Space, in particular, represents a challenging environment: without an atmosphere to protect from ionizing or particle radiation, current CMOS-based electronics are subject to transients faults, generalized performance reduction, accelerated wear, and, ultimately, unrecoverable system failure. Traditional approaches adopted to guarantee reliability and extended lifetime are based on redundancy which is fixed at design-time. However, these solutions are expensive in terms of resources and require a careful trade-off, because they increase complexity and area of the system, exposing it to a higher risk of overheating and radiation effects. Moreover, systems that are critical, time-constrained and where access is limited must be able to cope with situations where they cannot rely on human intervention. Therefore, there is an emerging interest in computer systems with adaptive capabilities that would be especially suited for novel high-performance embedded devices for aerospace.</p>
+<p>Our aim is improving efficiency, fault-tolerance, and computational capabilities of aerospace computer systems. In our vision, this research will allow the creation of a new generation of computing systems that autonomously perform their tasks for longer periods of time, fostering simpler and cheaper space exploration.</p>
+<h3 id="select-publications-1">Select Publications</h3>
 <ul>
-<li>
-<p>Panerati J. and Beltrame G. (2014) <em>Fault-tolerant Soft Real-time
-  Computing Systems based on Dynamic Bayesian Reasoning</em>, Proc. of
-  International Astronautics Congress, Toronto, Canada</p>
-</li>
-<li>
-<p>Panerati J., Abdi S., and Beltrame G. (2014) <em>Balancing System
-  Availability and Lifetime with Dynamic Hidden Markov Models</em>,
-  NASA/ESA Conference on Adaptive Hardware and Systems, Leicester, UK</p>
-</li>
-<li>
-<p>Panerati J. and Beltrame G. (2014) <em>A Comparative Evaluation of
-  Multi-Objective Ex- ploration Algorithms for High-Level Design</em>, ACM
-  Transactions on Design Automation of Electronic Systems.</p>
-</li>
-<li>
-<p>Panerati J., Sironi F., Carminati M., Maggio M., Beltrame G.,
-  Gmytrasiewicz P.  J., Sciuto D., and Santambrogio M. D. (2013) <em>On
-  Self-Adaptive Resource Allocation through Reinforcement Learning</em>,
-  NASA/ESA Conference on Adaptive Hardware and Systems, Turin, Italy</p>
-</li>
+<li><p>Panerati J. and Beltrame G. (2014) <em>Fault-tolerant Soft Real-time Computing Systems based on Dynamic Bayesian Reasoning</em>, Proc. of International Astronautics Congress, Toronto, Canada</p></li>
+<li><p>Panerati J., Abdi S., and Beltrame G. (2014) <em>Balancing System Availability and Lifetime with Dynamic Hidden Markov Models</em>, NASA/ESA Conference on Adaptive Hardware and Systems, Leicester, UK</p></li>
+<li><p>Panerati J. and Beltrame G. (2014) <em>A Comparative Evaluation of Multi-Objective Ex- ploration Algorithms for High-Level Design</em>, ACM Transactions on Design Automation of Electronic Systems.</p></li>
+<li><p>Panerati J., Sironi F., Carminati M., Maggio M., Beltrame G., Gmytrasiewicz P. J., Sciuto D., and Santambrogio M. D. (2013) <em>On Self-Adaptive Resource Allocation through Reinforcement Learning</em>, NASA/ESA Conference on Adaptive Hardware and Systems, Turin, Italy</p></li>
 </ul>
 <h3 id="students">Students</h3>
 <ul>
 <li>
 <a href="../people/jpanerati/">Jacopo Panerati</a> (PhD)</li>
 </ul>
-<h3 id="sponsors_2">Sponsors</h3>
+<h3 id="sponsors-2">Sponsors</h3>
 <p><img src="../images/NSERC.jpg" alt="NSERC" height="100px"><img src="../images/FRQNT.png" alt="FRQNT" height="70px"><img src="../images/logos_resmiq.png" alt="ReSMiQ" height="70px"></p>
 <hr>
 <h2 id="probabilistic-real-time-systems">Probabilistic Real Time Systems</h2>
-<p>Computing systems that are subject to strict operational deadlines
-from event (e.g. alarms, commands, etc.) to response are called
-real-time systems. These are employed in many applications where the
-response time of a control system can have a critical impact on the
-safety of people or infrastructure (e.g. airplanes, automobiles, or
-satellites). With critical applications become more and more complex,
-the performance of real-time systems has to increase to guarantee
-appropriate safety standards. The main obstacle to high-performance
-real-time systems is the unpredictable timing behaviour of modern
-computer architectures.  </p>
-<p>Currently, software designed for real-time
-systems needs to be guaranteed to be executed within the required time
-frame. Depending on the complexity of the underlying hardware
-architecture, this level of certainty might be difficult or impossible
-to reach. Within this context, this project will introduce a
-probabilistic approach: by enabling true randomized behaviour in
-processors and memory architectures, one can define probabilistic
-metrics for the timing behaviour of a system. This would bring
-real-time software engineering in line with other engineering domains,
-that perform risk analysis using component failure probabilities.  In
-this project we will define novel architectures and design
-methodologies for truly probabilistic real-time systems, focusing on
-aerospace applications. Successful implementation of such systems will
-have tremendous impact on the way critical systems are designed, and
-the potential benefits in terms of cost of integration, verification,
-and certification of real-time software are enormous.</p>
-<h3 id="select-publications_2">Select Publications</h3>
+<p>Computing systems that are subject to strict operational deadlines from event (e.g. alarms, commands, etc.) to response are called real-time systems. These are employed in many applications where the response time of a control system can have a critical impact on the safety of people or infrastructure (e.g. airplanes, automobiles, or satellites). With critical applications become more and more complex, the performance of real-time systems has to increase to guarantee appropriate safety standards. The main obstacle to high-performance real-time systems is the unpredictable timing behaviour of modern computer architectures.</p>
+<p>Currently, software designed for real-time systems needs to be guaranteed to be executed within the required time frame. Depending on the complexity of the underlying hardware architecture, this level of certainty might be difficult or impossible to reach. Within this context, this project will introduce a probabilistic approach: by enabling true randomized behaviour in processors and memory architectures, one can define probabilistic metrics for the timing behaviour of a system. This would bring real-time software engineering in line with other engineering domains, that perform risk analysis using component failure probabilities. In this project we will define novel architectures and design methodologies for truly probabilistic real-time systems, focusing on aerospace applications. Successful implementation of such systems will have tremendous impact on the way critical systems are designed, and the potential benefits in terms of cost of integration, verification, and certification of real-time software are enormous.</p>
+<h3 id="select-publications-2">Select Publications</h3>
 <ul>
-<li>C. Chen, J. Panerati, and G. Beltrame. Effects of online fault detection mechanisms on probabilistic timing analysis. In 2016 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFTS). Sept. 2016.</li>
+<li>C. Chen, J. Panerati, and G. Beltrame. Effects of online fault detection mechanisms on probabilistic timing analysis. In 2016 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFTS). Sept. 2016.</li>
 <li>C. Chen, L. Santinelli, J. Hugues, and G. Beltrame. Static probabilistic timing analysis in presence of faults. In 11th IEEE International Symposium on Industrial Embedded Systems (SIES). May 2016.</li>
 <li>H. Anwar and G. Beltrame. A probabilistically analysable cache implementation on fpga. In IEEE International NEW Circuits And Systems (NEWCAS). Grenoble, France, June 2015.</li>
 </ul>
-<h3 id="students_1">Students</h3>
+<h3 id="students-1">Students</h3>
 <ul>
 <li>
 <a href="../people/cchen/">Chao Chen</a> (PhD)</li>
 <li>
 <a href="../people/hanwar/">Hassan Anwar</a> (MSc)</li>
 </ul>
-<h3 id="sponsors_3">Sponsors</h3>
+<h3 id="sponsors-3">Sponsors</h3>
 <!-- Images -->
-
 <p><img src="../images/NSERC.jpg" alt="NSERC" height="100px"><img src="../images/poly.jpg" alt="POLY" height="70px"></p>
 <hr>
 <h2 id="hardware-aware-real-time-code-generation">Hardware-aware Real-Time Code Generation</h2>
-<p>When developing simulation software, the development team has to rely
-on the competence of subject matter experts (SMEs) in different areas
-and with expertise from a multitude of domains, such as mechanics,
-power electronics, avionics, and more. In general, expecting SMEs to
-translate their domain knowledge into an imperative programming
-language is quite unrealistic, leading to the use of domain-specific
-languages (DSLs). On the other hand, by trading performance for
-usability to cope with software complexity, it had become increasingly
-difficult to extract the maximum performance from the hardware without
-a considerable knowledge of the hardware and expertise in parallel
-programming. The purpose of this project is to define a methodology
-for hiding software complexity from SMEs by automating the software
-generation, mapping and optimization according to inputs from SMEs and
-hardware and software experts, who describe the execution platform in
-sufficient detail. This methodology will be applied in particular to
-the aerospace industry’s Full Mission Simulators (FMSs), which are
-applications that are developed and maintained by multiple SMEs. </p>
-<p>The overall result of this approach will be cost-effective and
-interoperable software products that will give a competitive advantage
-to the aerospace industry of Canada and Quebec.</p>
-<h3 id="select-publications_3">Select Publications</h3>
+<p>When developing simulation software, the development team has to rely on the competence of subject matter experts (SMEs) in different areas and with expertise from a multitude of domains, such as mechanics, power electronics, avionics, and more. In general, expecting SMEs to translate their domain knowledge into an imperative programming language is quite unrealistic, leading to the use of domain-specific languages (DSLs). On the other hand, by trading performance for usability to cope with software complexity, it had become increasingly difficult to extract the maximum performance from the hardware without a considerable knowledge of the hardware and expertise in parallel programming. The purpose of this project is to define a methodology for hiding software complexity from SMEs by automating the software generation, mapping and optimization according to inputs from SMEs and hardware and software experts, who describe the execution platform in sufficient detail. This methodology will be applied in particular to the aerospace industry’s Full Mission Simulators (FMSs), which are applications that are developed and maintained by multiple SMEs.</p>
+<p>The overall result of this approach will be cost-effective and interoperable software products that will give a competitive advantage to the aerospace industry of Canada and Quebec.</p>
+<h3 id="select-publications-3">Select Publications</h3>
 <ul>
 <li>Rabeh Ayari, Imane Hafnaoui, Alexandra Aguiar, Patricia Gilbert, Michel Galibois, Jean-Pierre Rousseau, Giovanni Beltrame, and Gabriela Nicolescu. Multi-objective mapping of full-mission simulators on heterogeneous distributed multi-processor systems. The Journal of Defense Modeling and Simulation: Applications, Methodology, Technology, 2016.</li>
 <li>Rabeh Ayari, Imane Hafnaoui, Giovanni Beltrame, and Gabriela Nicolescu. Schedulability-guided crossover operator for real-time scheduling on heterogeneous multi-core systems. In Proceedings - IEEE International Symposium on Rapid System Prototyping, RSP. Pittsburgh, PA, United States of America, 2016.</li>
 <li>Imane Hafnaoui, Rabeh Ayari, Gabriela Nicolescu, and Giovanni Beltrame. Simulation-based model generator for software performance estimation. In Proceedings of the Conference on Summer Computer Simulation. Society for Computer Simulation International, 2016</li>
 </ul>
-<h3 id="students_2">Students</h3>
+<h3 id="students-2">Students</h3>
 <ul>
 <li>
 <a href="../people/ihafnaoui/">Imane Hafnaoui</a> (PhD)</li>
 </ul>
-<h3 id="sponsors_4">Sponsors</h3>
+<h3 id="sponsors-4">Sponsors</h3>
 <!-- Images -->
-
 <p><img src="../images/NSERC.jpg" alt="NSERC" height="100px"><img src="../images/CAE_Inc_Logo.png" alt="CAE" height="70px"></p>
 <hr>
 <h2 id="ictherm-thermal-modelling">
 <a href="http://www.ictherm.com">ICTherm</a>: Thermal modelling</h2>
-<p>ICTherm is a library for the thermal modeling of electronic
-devices. It is multi-scale and it allows to easily model and simulate
-the thermal behavior of modern integrated circuits, such as 3D-ICs
-with TSVs, microfluidic systems, and full devices. ICTherm uses novel
-algorithms that enable extremely fast yet accurate simulations. The
-library is written in C and runs on GNU/Linux systems.</p>
+<p>ICTherm is a library for the thermal modeling of electronic devices. It is multi-scale and it allows to easily model and simulate the thermal behavior of modern integrated circuits, such as 3D-ICs with TSVs, microfluidic systems, and full devices. ICTherm uses novel algorithms that enable extremely fast yet accurate simulations. The library is written in C and runs on GNU/Linux systems.</p>
 <h3 id="select-publications-and-patents">Select Publications and Patents</h3>
 <ul>
-<li>
-<p>A Fourmigue, G Beltrame, G Nicolescu, <em>Efficient Transient Thermal
-  Simulation of 3D ICs with Liquid-Cooling and Through Silicon Vias</em>,
-  In Proc. of Design, Automation and Test in Europe (DATE),
-  pp. 1385-1390, Dresden, Germany, Mar. 2014</p>
-</li>
-<li>
-<p>A. Fourmigue, G. Beltrame, G. Nicolescu and E.M. Aboulhamid, <em>A
-  linear-time approach for the transient thermal simulation of
-  liquid-cooled 3D ICs</em>. In Proc. of CODES+ISSS, pp. 197-205, Taipei, 
-  Taiwan, Oct. 2011</p>
-</li>
-<li>
-<p>A. Fourmigue, G. Beltrame, G. Nicolescu, E.M. Aboulhamid and
-  I. O'Connor, <em>Multi-granularity thermal evaluation of 3D MPSoC
-  architectures</em>. In Proc. of Design, Automation and Test in Europe
-  (DATE), pp. 1-4, Grenoble, France, Mar. 2011</p>
-</li>
+<li><p>A Fourmigue, G Beltrame, G Nicolescu, <em>Efficient Transient Thermal Simulation of 3D ICs with Liquid-Cooling and Through Silicon Vias</em>, In Proc. of Design, Automation and Test in Europe (DATE), pp. 1385-1390, Dresden, Germany, Mar. 2014</p></li>
+<li><p>A. Fourmigue, G. Beltrame, G. Nicolescu and E.M. Aboulhamid, <em>A linear-time approach for the transient thermal simulation of liquid-cooled 3D ICs</em>. In Proc. of CODES+ISSS, pp. 197-205, Taipei, Taiwan, Oct. 2011</p></li>
+<li><p>A. Fourmigue, G. Beltrame, G. Nicolescu, E.M. Aboulhamid and I. O’Connor, <em>Multi-granularity thermal evaluation of 3D MPSoC architectures</em>. In Proc. of Design, Automation and Test in Europe (DATE), pp. 1-4, Grenoble, France, Mar. 2011</p></li>
 </ul>
 <h3 id="tools">Tools</h3>
 <p><a href="http://www.ictherm.com/download.htm">ICTherm</a> - demo version of our thermal simulator</p>
-<h3 id="students_3">Students</h3>
+<h3 id="students-3">Students</h3>
 <ul>
 <li>Alain Fourmigue (PhD)</li>
 <li>
@@ -371,116 +251,41 @@ library is written in C and runs on GNU/Linux systems.</p>
 <!-- Images --><p><img src="../images/NSERC.jpg" alt="NSERC" height="100px"></p>
 <hr>
 <h2 id="radiation-tolerant-fpga-architectures">Radiation-tolerant FPGA architectures</h2>
-<p>Outside the protective cocoon of Earth's atmosphere, extreme
-temperature changes, vacuum and a high radiation, make for a
-particularly harsh environment for electronic systems.  The design of
-space-grade hardware (usually referred to as “hardened components”)
-requires large investments in infrastructure, and its development
-usually relies on government or military projects. However, with the
-recent opening of the space sector to private enterprises, the market
-faces a growing interest for the use of low-cost, off-the-shelf
-components (COTS). These components have to be properly screened and
-the design of computer systems has to take into account and work
-around their vulnerabilities. Current research focuses on using COTS
-in fault-tolerant configurations to obtain reliable systems that can
-be successfully used in space missions.  The benefits of this research
-are not limited to the space segment: current technology trends—
-smaller feature sizes, lower voltage levels, higher operating
-frequencies —are projected to cause an increase in the failure rate of
-integrated circuits. Similar fault-tolerance strategies used in space
-applications can be used to mitigate these effects.</p>
-<p>Field Programmable Gate Arrays (FPGAs) are programmable hardware
-devices, and are generally used for hardware prototyping. FPGAs
-typically have a higher cost per device manufactured, and lower
-performance when compared to custom devices produced in large
-volumes. Nevertheless, their constant evolution has made them a very
-attractive proposition for the small-volume aerospace market: they can
-be programmed with complex architectures with sufficient performance,
-for a fraction of the cost of producing a custom integrated
-circuit. FPGAs come in different flavours, and the most common, are
-the FLASH and SRAM kinds. These, in their non-military versions, are
-particularly sensitive to particle radiation (neturons, protons and
-other ions), the effects of which, called Single Event Effects (SEEs),
-can disrupt their normal behaviour. Our objective is to define
-low-cost systems, based on FPGAs, that are tolerant to SEEs, without
-excessively reducing their performance or functionality.</p>
-<h3 id="tools_1">Tools</h3>
-<p><a href="https://bitbucket.org/mistlab/morfin">MORFIN</a> - an orbital-realistic
-fault-injector</p>
-<h3 id="students_4">Students</h3>
+<p>Outside the protective cocoon of Earth’s atmosphere, extreme temperature changes, vacuum and a high radiation, make for a particularly harsh environment for electronic systems. The design of space-grade hardware (usually referred to as “hardened components”) requires large investments in infrastructure, and its development usually relies on government or military projects. However, with the recent opening of the space sector to private enterprises, the market faces a growing interest for the use of low-cost, off-the-shelf components (COTS). These components have to be properly screened and the design of computer systems has to take into account and work around their vulnerabilities. Current research focuses on using COTS in fault-tolerant configurations to obtain reliable systems that can be successfully used in space missions. The benefits of this research are not limited to the space segment: current technology trends— smaller feature sizes, lower voltage levels, higher operating frequencies —are projected to cause an increase in the failure rate of integrated circuits. Similar fault-tolerance strategies used in space applications can be used to mitigate these effects.</p>
+<p>Field Programmable Gate Arrays (FPGAs) are programmable hardware devices, and are generally used for hardware prototyping. FPGAs typically have a higher cost per device manufactured, and lower performance when compared to custom devices produced in large volumes. Nevertheless, their constant evolution has made them a very attractive proposition for the small-volume aerospace market: they can be programmed with complex architectures with sufficient performance, for a fraction of the cost of producing a custom integrated circuit. FPGAs come in different flavours, and the most common, are the FLASH and SRAM kinds. These, in their non-military versions, are particularly sensitive to particle radiation (neturons, protons and other ions), the effects of which, called Single Event Effects (SEEs), can disrupt their normal behaviour. Our objective is to define low-cost systems, based on FPGAs, that are tolerant to SEEs, without excessively reducing their performance or functionality.</p>
+<h3 id="tools-1">Tools</h3>
+<p><a href="https://bitbucket.org/mistlab/morfin">MORFIN</a> - an orbital-realistic fault-injector</p>
+<h3 id="students-4">Students</h3>
 <ul>
 <li>
 <a href="../people/pheimani/">Prakash Heimani</a> (BSc)</li>
 <li>
 <a href="../people/vedant/">Vedant</a> (BSc)</li>
 </ul>
-<h3 id="sponsors_5">Sponsors</h3>
+<h3 id="sponsors-5">Sponsors</h3>
 <!-- ESA logo -->
-
 <p><img src="../images/mitacs_logo.png" alt="MITACS" height="70px"><img src="../images/altera.jpg" alt="ALTERA" height="70px"><img src="../images/poly.jpg" alt="POLY" height="70px"></p>
 <hr>
 <h2 id="auditory-orientation-aid-for-astronauts">Auditory Orientation Aid for Astronauts</h2>
-<p>So. Let's imagine that after many years of dreaming, you're going into
-space! Unfortunately, when you get into orbit, you're miserable! Like
-most astronauts, you experience malaise, disorientation, dizziness,
-nausea, and even vomiting.  For a long-duration mission, space
-adaptation sickness is a fairly minor inconvenience, but if you have
-only a few days in space to work or play, of course it's more of a
-problem.  We propose a simple solution: provide an additional
-reference in the form of an auditory signal, perceived as coming from
-Earth. We hope to make commercial spaceflight more enjoyable.</p>
-<p>This project's purpose is to create a device that provides orientation
-reference information in microgravity environments. The device must be
-comfortable and must not interfere with crew communication or add to
-already high noise levels found on spacecraft.</p>
+<p>So. Let’s imagine that after many years of dreaming, you’re going into space! Unfortunately, when you get into orbit, you’re miserable! Like most astronauts, you experience malaise, disorientation, dizziness, nausea, and even vomiting. For a long-duration mission, space adaptation sickness is a fairly minor inconvenience, but if you have only a few days in space to work or play, of course it’s more of a problem. We propose a simple solution: provide an additional reference in the form of an auditory signal, perceived as coming from Earth. We hope to make commercial spaceflight more enjoyable.</p>
+<p>This project’s purpose is to create a device that provides orientation reference information in microgravity environments. The device must be comfortable and must not interfere with crew communication or add to already high noise levels found on spacecraft.</p>
 <div class="video-container">
-<iframe width="560" height="315" src="//www.youtube.com/embed/k7uFAgHQ92M?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/k7uFAgHQ92M?rel=0" frameborder="0" allowfullscreen>
+</iframe>
 </div>
-
 <h2 id="trap-fast-instruction-set-simulation">
 <a href="http://trap-gen.googlecode.com">TRAP</a>: Fast instruction set simulation</h2>
-<p>TRAP (TRansaction level Automatic Processor generator) is a tool for
-the automatic generation of processor simulators starting from high
-level descriptions. This means that the developer only need to provide
-basic structural information (i.e. the number of registers, the
-endianess etc.) and the behavior of each instruction of the processor
-ISA; this data is then used for the generation of C++ code emulating
-the processor behavior. Such an approach consistently eases the
-developer's work (with respect to manual coding of the simulator) both
-because it requires only the specification of the necessary details
-and because it forces a separation of the processor behavior from its
-structure. The tool is written in Python and it produces SystemC based
-simulators. With respect to standard ADL, having the input directly
-from Python eliminates the need for having an ad-hoc front-end thus
-consistently reducing the development effort.  </p>
+<p>TRAP (TRansaction level Automatic Processor generator) is a tool for the automatic generation of processor simulators starting from high level descriptions. This means that the developer only need to provide basic structural information (i.e. the number of registers, the endianess etc.) and the behavior of each instruction of the processor ISA; this data is then used for the generation of C++ code emulating the processor behavior. Such an approach consistently eases the developer’s work (with respect to manual coding of the simulator) both because it requires only the specification of the necessary details and because it forces a separation of the processor behavior from its structure. The tool is written in Python and it produces SystemC based simulators. With respect to standard ADL, having the input directly from Python eliminates the need for having an ad-hoc front-end thus consistently reducing the development effort.</p>
 <p><img src="../images/esa.png" alt="ESA" height="70px"></p>
 <hr>
 <h2 id="resp-virtual-platform-technology">
 <a href="http://resp-sim.googlecode.com">ReSP</a>: Virtual platform technology</h2>
-<p>ReSP is an MPSoC simulation platform working at a high abstraction
-level; components used by ReSP are based on SystemC and TLM hardware
-and communication description libraries. ReSP provides a non-intrusive
-framework to manipulate SystemC and TLM objects. The simulation
-platform is built using Python programming language; its reflective
-capabilities augment the platform with the possibility of observing
-the internal structure of the SystemC component models. This feature
-enables run-time composition and dynamic management of the
-architecture under analysis. The full potentialities offered by the
-integration among Python and SystemC are exploited, during simulation,
-to query, examine and, possibly, modify the internal status of the
-hardware models. These capabilities simplify the debugging process for
-both the modeled hardware architecture and the software running on it.</p>
-<p>In order to add reflective capabilities to C++, wrappers around
-SystemC components must be created; they allow interoperability
-between C++ and Python languages. These wrappers are automatically
-created using Py++ tool.  </p>
+<p>ReSP is an MPSoC simulation platform working at a high abstraction level; components used by ReSP are based on SystemC and TLM hardware and communication description libraries. ReSP provides a non-intrusive framework to manipulate SystemC and TLM objects. The simulation platform is built using Python programming language; its reflective capabilities augment the platform with the possibility of observing the internal structure of the SystemC component models. This feature enables run-time composition and dynamic management of the architecture under analysis. The full potentialities offered by the integration among Python and SystemC are exploited, during simulation, to query, examine and, possibly, modify the internal status of the hardware models. These capabilities simplify the debugging process for both the modeled hardware architecture and the software running on it.</p>
+<p>In order to add reflective capabilities to C++, wrappers around SystemC components must be created; they allow interoperability between C++ and Python languages. These wrappers are automatically created using Py++ tool.</p>
 <p><img src="../images/esa.png" alt="ESA" height="70px"></p>
 <hr>
 <h2 id="infault-radiation-tolerance-verification">InFault: Radiation-tolerance Verification</h2>
-<p>A novel approach to verify Single-Event-Upset (SEU) protection based
-on smart behavioral simulation. Our analysis does not require a
-testbench and can perform full, exhaustive coverage within less than
-an hour for typical designs.</p>
+<p>A novel approach to verify Single-Event-Upset (SEU) protection based on smart behavioral simulation. Our analysis does not require a testbench and can perform full, exhaustive coverage within less than an hour for typical designs.</p>
 <p><img src="../images/esa.png" alt="ESA" height="70px"></p>
     </div>
 </article>

@@ -6,8 +6,10 @@ jobs:
     name: 'Deploy Nikola to GitHub Pages'
     steps:
     - name: Check out
-      uses: actions/checkout@v2
-    - name: Fix git ownership
-      run: git config --global --add safe.directory /github/workspace
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Build and Deploy Nikola
       uses: getnikola/nikola-action@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -2,6 +2,11 @@
 Name = rest_people
 Module = people
 
+[Nikola]
+compiler = rest
+PluginCategory = CompilerExtension
+
+
 [Documentation]
 Author = Giovanni Beltrame
 Version = 0.1

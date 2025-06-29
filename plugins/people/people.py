@@ -34,17 +34,18 @@ from docutils.parsers.rst import Directive, directives
 
 from nikola.plugin_categories import RestExtension
 
-from configparser import * 
+from configparser import ConfigParser
+
 
 class Plugin(RestExtension):
 
     name = "rest_people"
 
     def set_site(self, site):
-        self.site = site
+        global _site
+        _site = self.site = site
         directives.register_directive('people', People)
-        People.site = site
-        return super(Plugin, self).set_site(site)
+        return super().set_site(site)
 
 class People(Directive):
     """ Restructured text extension for inserting a table of people."""
@@ -54,7 +55,7 @@ class People(Directive):
         if len(self.content) == 0:
             return
 
-        if self.site.invariant:  # for testing purposes
+        if _site.invariant:  # for testing purposes
             table_id = 'people_' + 'fixedvaluethatisnotauuid'
         else:
             table_id = 'people_' + uuid.uuid4().hex
@@ -94,7 +95,7 @@ class People(Directive):
                 people.append(person)
                 
 
-        output = self.site.template_system.render_template(
+        output = _site.template_system.render_template(
             'people.tmpl',
             None,
             {
@@ -104,6 +105,3 @@ class People(Directive):
             }
         )
         return [nodes.raw('', output, format='html')]
-
-
-directives.register_directive('people', People)

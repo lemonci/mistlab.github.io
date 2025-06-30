@@ -26,12 +26,12 @@ MathJax.Hub.Config({
 <meta property="og:title" content="Local Topology Manipulation - Supplementary Material">
 <meta property="og:url" content="http://mistlab.ca/papers/2022/TopologyManipulation/">
 <meta property="og:description" content="Supplementary Material
-We provide extra information for the experiments and results in the paper.
+We provide extra information for the experiments and results in the paper. 
 
 Decentralised rules for robots swarms to form Line and Star
 
 1. Line formation
-The line topology is a">
+The line topology is ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2022-09-26T13:45:07-04:00">
 <meta name="author" content="MIST Lab">
@@ -39,12 +39,12 @@ The line topology is a">
 <meta property="og:title" content="Local Topology Manipulation - Supplementary Material">
 <meta property="og:url" content="http://mistlab.ca/papers/2022/TopologyManipulation/">
 <meta property="og:description" content="Supplementary Material
-We provide extra information for the experiments and results in the paper.
+We provide extra information for the experiments and results in the paper. 
 
 Decentralised rules for robots swarms to form Line and Star
 
 1. Line formation
-The line topology is a">
+The line topology is ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2022-09-26T13:45:07-04:00">
 </head>
@@ -94,7 +94,14 @@ The line topology is a">
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
-  </nav><div class="container">
+  </nav>
+
+  
+
+  
+
+
+  <div class="container">
   
 <article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="page-header" itemprop="headline name">Local Topology Manipulation - Supplementary Material</h1>
 
@@ -107,250 +114,269 @@ The line topology is a">
         <li><a href=".">TopologyManipulation</a></li>
         <li><a href="#"></a></li>
 </ul></nav><div itemprop="articleBody text">
-    <!--
-.. title: Local Topology Manipulation - Supplementary Material
-.. slug: 2022/TopologyManipulation
-.. date: 2022-09-26 13:45:07 UTC-04:00
-.. tags: 
-.. category: 
-.. link: https://mistlab.ca/papers/2022/TopologyManipulation 
--->
-<h1 id="supplementary-material">Supplementary Material</h1>
-<p>We provide extra information for the experiments and results in the paper.</p>
+    <h1 id="supplementary-material">Supplementary Material</h1>
+<p>We provide extra information for the experiments and results in the paper. </p>
 <hr>
 <h2 id="decentralised-rules-for-robots-swarms-to-form-line-and-star">Decentralised rules for robots swarms to form Line and Star</h2>
 <hr>
-<h3 id="line-formation">1. Line formation</h3>
-<p>The line topology is a special topology, where all the robots have either one neighbor (the ends of the line) and all other robots have two neighbors. The rules that the robots have to follow to form a line are:</p>
+<h3 id="1-line-formation">1. Line formation</h3>
+<p>The line topology is a special topology, where all the robots have either one neighbor (the ends of the line) and all other robots have two neighbors. The rules that the robots have to follow to form a line are:  </p>
 <ul>
-<li><p>Robots with <strong>degree(robot)&gt;2</strong> to be called Leaf transferer will do a random leaf transfer or super leaf transfer operation. For this they need at least two of their neighbors to be free (i.e., not involved in any other operation). To avoid getting caught in loops the leaf/super leaf remembers the previous leaf transferer and passes this information to the current leaf transferer. The leaf transferer, therefore, doesn’t transfer the leaf or super leaf to the previous leaf transferer.</p></li>
-<li><p>Robots with exactly two neighbors try to straighten the angle between their neighbors by moving towards a direction so as to reduce the obtuse angle.</p></li>
-</ul>
-<p>The parameters used for line formation experiment are <span class="math inline"><em>R</em><sub><em>t</em><em>r</em><em>a</em><em>n</em><em>s</em><em>f</em><em>e</em><em>r</em></sub> = 1<em>m</em></span>, <span class="math inline"><em>R</em><sub><em>m</em><em>i</em><em>s</em><em>s</em><em>i</em><em>o</em><em>n</em></sub> = 1.5<em>m</em></span>, <span class="math inline"><em>R</em><sub><em>r</em><em>a</em><em>n</em><em>g</em><em>e</em></sub> = 2.5<em>m</em></span>.</p>
-<hr>
-<h3 id="star-formation">2. Star formation</h3>
-<p>We consider a single root star formation. In star topology, all the robots except the root have one neighbor and the root has <span class="math inline"><em>N</em> − 1</span> neighbors. The rules that the robots have to follow to form a line are:</p>
-<ul>
-<li>Each robot connected to the root with more than one neighbor is called a leaflizer, which leaflizes with the root by transferring all its neighbors to the root.<br>
+<li>
+<p>Robots with <strong>degree(robot)&gt;2</strong> to be called Leaf transferer will do a random leaf transfer or super leaf transfer operation. For this they need at least two of their neighbors to be free (i.e., not involved in any other operation). To avoid getting caught in loops the leaf/super leaf remembers the previous leaf transferer and passes this information to the current leaf transferer. The leaf transferer, therefore, doesn't transfer the leaf or super leaf to the previous leaf transferer.</p>
 </li>
+<li>
+<p>Robots with exactly two neighbors try to straighten the angle between their neighbors by moving towards a direction so as to reduce the obtuse angle.  </p>
+</li>
+</ul>
+<p>The parameters used for line formation experiment are $R_{transfer} = 1m$, $R_{mission} = 1.5m$, $R_{range} = 2.5m$. </p>
+<hr>
+<h3 id="2-star-formation">2. Star formation</h3>
+<p>We consider a single root star formation. In star topology, all the robots except the root have one neighbor and the root has $N-1$ neighbors. The rules that the robots have to follow to form a line are:  </p>
+<ul>
+<li>Each robot connected to the root with more than one neighbor is called a leaflizer, which leaflizes with the root by transferring all its neighbors to the root.  </li>
 <li>The root calculates the angles between its leaves and informs them about the direction to make these angles equal.</li>
 </ul>
 <p>This table shows the parameters used in the star formation experiments.</p>
 <hr>
-<table style="width:97%;">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 25%">
-<col style="width: 27%">
-<col style="width: 23%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>No of robots</td>
-<td>
-<span class="math inline"><em>R</em><sub><em>r</em><em>a</em><em>n</em><em>g</em><em>e</em></sub></span>(m)</td>
-<td>
-<span class="math inline"><em>R</em><sub><em>t</em><em>r</em><em>a</em><em>n</em><em>s</em><em>f</em><em>e</em><em>r</em></sub></span>(m)</td>
-<td><span class="math inline"><em>R</em><sub><em>M</em><em>i</em><em>s</em><em>s</em><em>i</em><em>o</em><em>n</em></sub></span></td>
-</tr>
-<tr class="even">
-<td>15</td>
-<td>2.5</td>
-<td>1</td>
-<td>1.5</td>
-</tr>
-<tr class="odd">
-<td>30</td>
-<td>5</td>
-<td>2</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>60</td>
-<td>10</td>
-<td>4</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
+<p>+--------------+-----------------+-------------------+----------------+
+| No of robots | $R_{range}$(m)  | $R_{transfer}$(m) |  $R_{Mission}$ |
++--------------+-----------------+-------------------+----------------+
+| 15           | 2.5             |  1                |   1.5          |
++--------------+-----------------+-------------------+----------------+
+| 30           | 5               |  2                |   3            |
++--------------+-----------------+-------------------+----------------+
+| 60           | 10              |  4                |   6            |
++--------------+-----------------+-------------------+----------------+  </p>
 <hr>
 <h2 id="verification-of-theorem-and-lemma">Verification of Theorem and Lemma</h2>
 <h3 id="an-example-for-conversion-from-one-tree-to-another-tree-with-prufer-sequence">An example for conversion from one tree to another tree with Prufer Sequence</h3>
-<p>This shows an example as to how to use the prufer sequences and the operations to converrt from any initial tree to final tree.</p>
+<p>This shows an example as to how to use the prufer sequences and the operations to converrt from any initial tree to final tree. </p>
 <p><img src="../../TopologyManipulation/Example-12.png" alt="NSERC" height="1500px" width="900px"></p>
 <hr>
-<h3 id="test_theorem.ipynb"><a href="https://git.mistlab.ca/skarthik/local-operations-on-trees/-/blob/main/python-scripts/test_theorem.ipynb">test_theorem.ipynb</a></h3>
-<p>In order to verify transformation of trees, we implemented a script in python which verifies the conversion of all possible topologies for a swarm of size 10 to a specific random topology. We also verify that from a random topology it is possible to convert to all other possible topologies.</p>
-<pre><code>def sequence_output(input_prufer,final_prufer,plot=False):
+<h3 id="test_theoremipynb"><a href="https://git.mistlab.ca/skarthik/local-operations-on-trees/-/blob/main/python-scripts/test_theorem.ipynb">test_theorem.ipynb</a></h3>
+<p>In order to verify transformation of trees, we implemented a script in python which verifies the conversion of all possible topologies for a swarm of size 10 to a specific random topology. We also verify that from a random topology it is possible to convert to all other possible topologies. </p>
+<div class="code"><pre class="code literal-block"><span class="n">def</span><span class="w"> </span><span class="n">sequence_output</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">final_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="k">False</span><span class="p">)</span><span class="err">:</span>
 
-   A_input,input_leaves = visualizeP2A(input_prufer,plot=plot,title="Input")
-   A_final,final_leaves = visualizeP2A(final_prufer,plot=plot,title="Output") 
+<span class="w">   </span><span class="n">A_input</span><span class="p">,</span><span class="n">input_leaves</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeP2A</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="ss">"Input"</span><span class="p">)</span>
+<span class="w">   </span><span class="n">A_final</span><span class="p">,</span><span class="n">final_leaves</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeP2A</span><span class="p">(</span><span class="n">final_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="ss">"Output"</span><span class="p">)</span><span class="w"> </span>
 
-   i = 0
-   for i in range(len(input_prufer)):
-      if i == 0:
-         if not is_leaf(A_input,final_leaves[i]-1): #if the first leaf of final tree is not a leaf 
-            neighbour = np.nonzero(A_input[final_leaves[i]-1])[0][0]                                                                
-            #if the first leaf of the final tree is not a leaf in the first leaf leaflize it.
-            temp_a = leaflize(A_input,final_leaves[i]-1,neighbour)
-            title = "Leaflize: "+str(final_leaves[i])+" with: "+str(neighbour+1)
-            _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
-         
-            if temp_a[final_leaves[i]-1][final_prufer[i]-1] == 0: #if the created leaf is not connected to the final prufer do a leaf transfer. 
-               neighbour = np.nonzero(temp_a[final_leaves[i]-1])[0][0]
-               temp_a = leaftransfer(temp_a,neighbour,final_leaves[i]-1,final_prufer[i]-1)
-               title = "Leaftransfer: leaf: "+str(final_leaves[i])+" from: "+str(neighbour+1)+" to: "+str(final_prufer[i])
-               _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
+<span class="w">   </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">))</span><span class="err">:</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">is_leaf</span><span class="p">(</span><span class="n">A_input</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span>
+<span class="w">            </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">A_input</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="p">)</span><span class="o">[</span><span class="n">0</span><span class="o">][</span><span class="n">0</span><span class="o">]</span><span class="w">                                                                </span>
+<span class="w">            </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">leaflize</span><span class="w"> </span><span class="n">it</span><span class="p">.</span>
+<span class="w">            </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaflize</span><span class="p">(</span><span class="n">A_input</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">neighbour</span><span class="p">)</span>
+<span class="w">            </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaflize: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" with: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
 
-         elif is_leaf(A_input,final_leaves[i]-1): #if it is a leaf
-            if A_input[final_leaves[i]-1][final_prufer[i]-1] == 0: #if it is not connected to final prufer do a leaf transfer
-               neighbour = np.nonzero(A_input[final_leaves[i]-1])[0][0]
-               temp_a = leaftransfer(A_input,neighbour,final_leaves[i]-1,final_prufer[i]-1)
-               title = "Leaftransfer: leaf: "+str(final_leaves[i])+" from: "+str(neighbour+1)+" to: "+str(final_prufer[i])
-               _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
-      
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="o">[</span><span class="n">final_prufer[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">prufer</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">transfer</span><span class="p">.</span><span class="w"> </span>
+<span class="w">               </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="p">)</span><span class="o">[</span><span class="n">0</span><span class="o">][</span><span class="n">0</span><span class="o">]</span>
+<span class="w">               </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">               </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaftransfer: leaf: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" from: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="ss">" to: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+<span class="w">               </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
 
-            else: # good to proceed
-               temp_a = np.copy(A_input)
+<span class="w">         </span><span class="n">elif</span><span class="w"> </span><span class="n">is_leaf</span><span class="p">(</span><span class="n">A_input</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">A_input</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="o">[</span><span class="n">final_prufer[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">prufer</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">transfer</span>
+<span class="w">               </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">A_input</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="p">)</span><span class="o">[</span><span class="n">0</span><span class="o">][</span><span class="n">0</span><span class="o">]</span>
+<span class="w">               </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">A_input</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">               </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaftransfer: leaf: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" from: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="ss">" to: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+<span class="w">               </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
 
-      elif i&gt;0:
-         if is_leaf(temp_a,final_leaves[i]-1):
-            if temp_a[final_leaves[i]-1][final_prufer[i]-1] == 0: #if the leaf is not connected to the final prufer do a leaf transfer. 
-               neighbour = np.nonzero(temp_a[final_leaves[i]-1])[0][0]
-               temp_a = leaftransfer(temp_a,neighbour,final_leaves[i]-1,final_prufer[i]-1)
-               title = "Leaftransfer: leaf: "+str(final_leaves[i])+" from: "+str(neighbour+1)+" to: "+str(final_prufer[i])
-               _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
-         
-         elif not is_leaf(temp_a,final_leaves[i]-1):
-            all_neighbours = np.nonzero(temp_a[final_leaves[i]-1])[0]
-            neighbours = np.setdiff1d(all_neighbours,np.subtract(final_leaves[0:i],np.ones(len(final_leaves[0:i]),dtype=int)))
-            branches_to_keep = np.intersect1d(all_neighbours,np.subtract(final_leaves[0:i],np.ones(len(final_leaves[0:i]),dtype=int)))
-            if len(neighbours) == 1: # the subtree is a leaf 
-               if temp_a[final_leaves[i]-1][final_prufer[i]-1] == 0: #if the created leaf is not connected to the final prufer do a leaf transfer. 
-                  neighbour = neighbours[0]
-                  temp_a = leaftransfer(temp_a,neighbour,final_leaves[i]-1,final_prufer[i]-1)
-                  title = "Leaftransfer: leaf: "+str(final_leaves[i])+" from: "+str(neighbour+1)+" to: "+str(final_prufer[i])
-                  _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
-         
-            elif len(neighbours) &gt; 1: #leaflize the superleaf
-               temp_a = leaflize(temp_a,final_leaves[i]-1,neighbours[0],branches_to_keep)
-               title = "Leaflize: "+str(final_leaves[i])+" with: "+str(neighbours[0]+1)
-               _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
 
-               if temp_a[final_leaves[i]-1][final_prufer[i]-1] == 0: #if the created leaf is not connected to the final prufer do a leaf transfer. 
-                  neighbour = neighbours[0]
-                  temp_a = leaftransfer(temp_a,neighbour,final_leaves[i]-1,final_prufer[i]-1)
-                  title = "Leaftransfer: leaf: "+str(final_leaves[i])+" from: "+str(neighbour+1)+" to: "+str(final_prufer[i])
-                  _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
+<span class="w">            </span><span class="k">else</span><span class="err">:</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="n">good</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">proceed</span>
+<span class="w">               </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">A_input</span><span class="p">)</span>
 
-      if i == len(input_prufer)-1:
-         P = visualizeA2P(temp_a,prufer_flag=True,plot=False)
-         if (P == final_prufer):
-            print("input_prufer: " + str(input_prufer) + " final_prufer: "+ str(final_prufer)+" success: "+"True")
-            return True
-         else: 
-            print("input_prufer: " + str(input_prufer) + " final_prufer: "+ str(final_prufer)+" success: "+"False")
-            return False
-</code></pre>
+<span class="w">      </span><span class="n">elif</span><span class="w"> </span><span class="n">i</span><span class="o">&gt;</span><span class="mi">0</span><span class="err">:</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="n">is_leaf</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="o">[</span><span class="n">final_prufer[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">prufer</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">transfer</span><span class="p">.</span><span class="w"> </span>
+<span class="w">               </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="p">)</span><span class="o">[</span><span class="n">0</span><span class="o">][</span><span class="n">0</span><span class="o">]</span>
+<span class="w">               </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">               </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaftransfer: leaf: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" from: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="ss">" to: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+<span class="w">               </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+
+<span class="w">         </span><span class="n">elif</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">is_leaf</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span>
+<span class="w">            </span><span class="n">all_neighbours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="p">)</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">            </span><span class="n">neighbours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">all_neighbours</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">0:i</span><span class="o">]</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">0:i</span><span class="o">]</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="nc">int</span><span class="p">)))</span>
+<span class="w">            </span><span class="n">branches_to_keep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">intersect1d</span><span class="p">(</span><span class="n">all_neighbours</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">0:i</span><span class="o">]</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">0:i</span><span class="o">]</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="nc">int</span><span class="p">)))</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">neighbours</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="err">:</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">subtree</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span>
+<span class="w">               </span><span class="k">if</span><span class="w"> </span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="o">[</span><span class="n">final_prufer[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">prufer</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">transfer</span><span class="p">.</span><span class="w"> </span>
+<span class="w">                  </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neighbours</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">                  </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaftransfer: leaf: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" from: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="ss">" to: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+<span class="w">                  </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+
+<span class="w">            </span><span class="n">elif</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">neighbours</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="err">:</span><span class="w"> </span><span class="n">#leaflize</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">superleaf</span>
+<span class="w">               </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaflize</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">neighbours</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="n">branches_to_keep</span><span class="p">)</span>
+<span class="w">               </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaflize: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" with: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbours</span><span class="o">[</span><span class="n">0</span><span class="o">]+</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">               </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+
+<span class="w">               </span><span class="k">if</span><span class="w"> </span><span class="n">temp_a</span><span class="o">[</span><span class="n">final_leaves[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="o">[</span><span class="n">final_prufer[i</span><span class="o">]-</span><span class="mi">1</span><span class="err">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="err">:</span><span class="w"> </span><span class="n">#if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">created</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">connected</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">prufer</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leaf</span><span class="w"> </span><span class="n">transfer</span><span class="p">.</span><span class="w"> </span>
+<span class="w">                  </span><span class="n">neighbour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neighbours</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">                  </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">,</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"Leaftransfer: leaf: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_leaves</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="ss">" from: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="ss">" to: "</span><span class="o">+</span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+<span class="w">                  </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="err">:</span>
+<span class="w">         </span><span class="n">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">P</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">final_prufer</span><span class="p">)</span><span class="err">:</span>
+<span class="w">            </span><span class="k">print</span><span class="p">(</span><span class="ss">"input_prufer: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">" final_prufer: "</span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="p">)</span><span class="o">+</span><span class="ss">" success: "</span><span class="o">+</span><span class="ss">"True"</span><span class="p">)</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">True</span>
+<span class="w">         </span><span class="k">else</span><span class="err">:</span><span class="w"> </span>
+<span class="w">            </span><span class="k">print</span><span class="p">(</span><span class="ss">"input_prufer: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">" final_prufer: "</span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">final_prufer</span><span class="p">)</span><span class="o">+</span><span class="ss">" success: "</span><span class="o">+</span><span class="ss">"False"</span><span class="p">)</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">False</span>
+</pre></div>
+
 <hr>
-<h3 id="test_theorem_line_star.ipynb"><a href="https://git.mistlab.ca/skarthik/local-operations-on-trees/-/blob/main/python-scripts/test_theorem_line_star.ipynb">test_theorem_line_star.ipynb</a></h3>
-<p>We also have verified this algorithm in a python script where starting from any random topology we were able to form a star/line for a swarm of size 10 for all the possible <span class="math inline">10<sup>8</sup></span> combinations.</p>
-<pre><code>def line(input_prufer,plot=False):
-    
-    temp_a,_ = visualizeP2A(input_prufer,plot=plot,title="Input")
-    num_neighbours = np.matmul(temp_a,np.ones((temp_a.shape[0],1))).reshape(-1)
-    prev_leaf_transfer = np.ones(temp_a.shape[0])*-1
+<h3 id="test_theorem_line_staripynb"><a href="https://git.mistlab.ca/skarthik/local-operations-on-trees/-/blob/main/python-scripts/test_theorem_line_star.ipynb">test_theorem_line_star.ipynb</a></h3>
+<p>We also have verified this algorithm in a python script where starting from any random topology we were able to form a star/line for a swarm of size 10 for all the possible $10^8$ combinations. </p>
+<div class="code"><pre class="code literal-block"><span class="n">def</span><span class="w"> </span><span class="n">line</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="k">False</span><span class="p">)</span><span class="err">:</span>
 
-    while np.count_nonzero(num_neighbours &gt; 2)&gt;0:
-        leaf_transferers = np.argwhere(num_neighbours&gt;=3).reshape(-1)
-        np.random.shuffle(leaf_transferers)
+<span class="w">    </span><span class="n">temp_a</span><span class="p">,</span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeP2A</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="ss">"Input"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">num_neighbours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="n">temp_a</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">))).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="n">prev_leaf_transfer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">(</span><span class="n">temp_a</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">)</span><span class="o">*-</span><span class="mi">1</span>
 
-        for leaf_transferer in leaf_transferers:
-            neighbours = np.argwhere(temp_a[leaf_transferer]==1).reshape(-1)
-            np.random.shuffle(neighbours)
-            leaf = neighbours[0]
-            to_exclude = np.array([leaf,prev_leaf_transfer[leaf]])
-            neighbours_to_transfer = np.setdiff1d(neighbours,to_exclude)
-            np.random.shuffle(neighbours_to_transfer)
-            neighbour_to_transfer = neighbours_to_transfer[0]
-            prev_leaf_transfer[leaf] = leaf_transferer  
-            temp_a = leaftransfer(temp_a,leaf_transferer,leaf,neighbour_to_transfer)
-            _ = visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)               
-        
-        num_neighbours = np.matmul(temp_a,np.ones((temp_a.shape[0],1))).reshape(-1)
-    
-    return np.matmul(temp_a,np.ones((temp_a.shape[0],1))).reshape(-1)
-</code></pre>
-<pre><code>
-def star(root,input_prufer,plot=False):
-    root = root
-    input_prufer = input_prufer
-    n = len(input_prufer) + 2 
-    temp_a,_ = visualizeP2A(input_prufer,plot=plot,title="Input")
-    neighbours_root = np.argwhere(temp_a[root]==1).reshape(-1)
-    
-    while len(neighbours_root) &lt; n - 1:
-        for neighbour in neighbours_root:
-            if not is_leaf(temp_a,neighbour):
-                title = "leaflize: " + str(neighbour+1) + " with " + str(root+1)
-                temp_a = leaflize(temp_a,neighbour,root)   
-                visualizeA2P(temp_a,prufer_flag=True,plot=plot,title=title)
-        neighbours_root = np.argwhere(temp_a[root]==1).reshape(-1)
-    
-    return np.matmul(temp_a,np.ones((temp_a.shape[0],1))).reshape(-1)
-</code></pre>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">num_neighbours</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="err">:</span>
+<span class="w">        </span><span class="n">leaf_transferers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">num_neighbours</span><span class="o">&gt;=</span><span class="mi">3</span><span class="p">).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">leaf_transferers</span><span class="p">)</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">leaf_transferer</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">leaf_transferers</span><span class="p">:</span>
+<span class="w">            </span><span class="n">neighbours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">leaf_transferer</span><span class="o">]==</span><span class="mi">1</span><span class="p">).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">neighbours</span><span class="p">)</span>
+<span class="w">            </span><span class="n">leaf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neighbours</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">            </span><span class="n">to_exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="k">array</span><span class="p">(</span><span class="o">[</span><span class="n">leaf,prev_leaf_transfer[leaf</span><span class="o">]</span><span class="err">]</span><span class="p">)</span>
+<span class="w">            </span><span class="n">neighbours_to_transfer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">neighbours</span><span class="p">,</span><span class="n">to_exclude</span><span class="p">)</span>
+<span class="w">            </span><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">neighbours_to_transfer</span><span class="p">)</span>
+<span class="w">            </span><span class="n">neighbour_to_transfer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neighbours_to_transfer</span><span class="o">[</span><span class="n">0</span><span class="o">]</span>
+<span class="w">            </span><span class="n">prev_leaf_transfer</span><span class="o">[</span><span class="n">leaf</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaf_transferer</span><span class="w">  </span>
+<span class="w">            </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaftransfer</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">leaf_transferer</span><span class="p">,</span><span class="n">leaf</span><span class="p">,</span><span class="n">neighbour_to_transfer</span><span class="p">)</span>
+<span class="w">            </span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span><span class="w">               </span>
+
+<span class="w">        </span><span class="n">num_neighbours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="n">temp_a</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">))).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="n">temp_a</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">))).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+<div class="code"><pre class="code literal-block"><span class="n">def</span><span class="w"> </span><span class="n">star</span><span class="p">(</span><span class="n">root</span><span class="p">,</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="k">False</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">root</span>
+<span class="w">    </span><span class="n">input_prufer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input_prufer</span>
+<span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span>
+<span class="w">    </span><span class="n">temp_a</span><span class="p">,</span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visualizeP2A</span><span class="p">(</span><span class="n">input_prufer</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="ss">"Input"</span><span class="p">)</span>
+<span class="w">    </span><span class="n">neighbours_root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">root</span><span class="o">]==</span><span class="mi">1</span><span class="p">).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">neighbours_root</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="err">:</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">neighbour</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">neighbours_root</span><span class="p">:</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">is_leaf</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">)</span><span class="err">:</span>
+<span class="w">                </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">"leaflize: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">neighbour</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="ss">" with "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">str</span><span class="p">(</span><span class="n">root</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">                </span><span class="n">temp_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leaflize</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">neighbour</span><span class="p">,</span><span class="n">root</span><span class="p">)</span><span class="w">   </span>
+<span class="w">                </span><span class="n">visualizeA2P</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">prufer_flag</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+<span class="w">        </span><span class="n">neighbours_root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">temp_a</span><span class="o">[</span><span class="n">root</span><span class="o">]==</span><span class="mi">1</span><span class="p">).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">temp_a</span><span class="p">,</span><span class="n">np</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="n">temp_a</span><span class="p">.</span><span class="n">shape</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">))).</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
 <hr>
 <h2 id="supplementary-plots-for-the-experiments">Supplementary plots for the experiments</h2>
-<p><img src="https://user-images.githubusercontent.com/47322496/190194702-f57e9ee3-b5fd-492a-ba48-8d9bb8b18aff.png" alt="DARS2022_paper_9102-2-10(1)"><img src="https://user-images.githubusercontent.com/47322496/190194705-6338c10d-d549-4aae-845b-ff5c8a79aaa7.png" alt="DARS2022_paper_9102-2-11(1)"></p>
-<p>Figures 3 and 4 depict <span class="math inline"><em>λ</em><sub>2</sub></span>, coverage area, and progress of operations. We plot the time evolution of <span class="math inline"><em>λ</em><sub>2</sub></span> of the graph and the maintained spanning tree, as a connectivity index and a parameter specifying consensus rate. The evolution of the number of nodes with <span class="math inline">degree(robot) = 1</span> (i.e., having only one neighbor) and <span class="math inline">degree(robot) = 2</span> is sketched for the line formation and the evolution of the number of nodes with <span class="math inline">degree(robot) = 1</span> and nodes with <span class="math inline">degree(robot) ≥ 2</span> for the star formation, which is a progress index in each case. The <span class="math inline"><em>λ</em><sub>2</sub></span> of the manipulated spanning tree and the whole graph examine the connectivity awareness of our method which has to stay greater than zero over the experiment. In the specific case of line, <span class="math inline"><em>λ</em><sub>2</sub></span> of the tree reduces with time and reaches a constant value when the line has been straightened out. Also, <span class="math inline"><em>λ</em><sub>2</sub></span> of the graph will approach the same value, if <span class="math inline"><em>R</em><sub>mission</sub></span> is close to <span class="math inline"><em>R</em><sub>range</sub></span>, which is the minimum for a given connected graph of <span class="math inline"><em>N</em></span> nodes. However, In the case of the star topology, <span class="math inline"><em>λ</em><sub>2</sub></span> of the tree increases to a constant value of one at the end of the experiment no matter the number of nodes in the system, and the <span class="math inline"><em>λ</em><sub>2</sub></span> of the graph increases. If <span class="math inline"><em>R</em><sub>mission</sub> &lt; <em>R</em><sub>range</sub>/2</span> it would have approached an all to all graph which has the maximum <span class="math inline"><em>λ</em><sub>2</sub></span> for a given connected graph of <span class="math inline"><em>N</em></span> nodes. The coverage area has been shown to decrease for the star and to increase for the line case which is showing the trade-off between <span class="math inline"><em>λ</em><sub>2</sub></span> and the coverage area and that is why topology manipulation is needed to provide flexibility. Furthermore, for the star formation, we have plotted the number of nodes with <span class="math inline">degree(robot) = 1</span> and the number of nodes with <span class="math inline">degree(robot) ≥ 2</span>. This is to show that the manipulation operations are changing the topology closer to the star topology with time. The number of nodes with <span class="math inline">degree(robot) = 1</span> for the star case increases to <span class="math inline"><em>N</em> − 1</span> and there is exactly one node that has <span class="math inline"><em>N</em> − 1</span> neighbors, which is the root. The plots show the evolution of these metrics which is increasing for the number of nodes with <span class="math inline">degree(robot) = 1</span> and decreasing for the number of nodes with <span class="math inline">degree(robot) ≥ 2</span>. For line formation, we have shown a similar metric that reduces to 2 for the number of nodes <span class="math inline">degree(robot) = 1</span> and increases to <span class="math inline"><em>N</em> − 2</span> for the number of nodes <span class="math inline">degree(robot) = 2</span> which is the definition of a line topology.</p>
-<h2 id="setting-up-the-simlations-for-line-and-star-in-argos3-and-buzz.">Setting up the simlations for Line and Star in Argos3 and Buzz.</h2>
-<p>The code for the experiments can be found <a href="https://git.mistlab.ca/skarthik/local-operations-on-trees">here</a>. ARGoS3 Simulator ARGoS3 simulator can also be installed from binaries please refer to the official website for more information: https://www.argos-sim.info/ The instructions below are for installing ARGoS3 from its source. Official code repository: https://github.com/ilpincy/argos3 Dependencies for ARGoS3 can be installed using the following command:</p>
-<pre><code>sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
+<p><img alt="DARS2022_paper_9102-2-10(1)" src="https://user-images.githubusercontent.com/47322496/190194702-f57e9ee3-b5fd-492a-ba48-8d9bb8b18aff.png"><img alt="DARS2022_paper_9102-2-11(1)" src="https://user-images.githubusercontent.com/47322496/190194705-6338c10d-d549-4aae-845b-ff5c8a79aaa7.png"></p>
+<p>Figures 3 and 4 depict $\lambda_2$, coverage area, and progress of operations. We plot the time
+evolution of $\lambda_2$ of the graph and the maintained spanning tree, as a connectivity index and a parameter specifying consensus rate. 
+The evolution of the number of nodes with $\text{degree(robot)}=1$ (i.e., having only one
+neighbor) and $\text{degree(robot)}=2$ is sketched for the line formation and
+the evolution of the number of nodes with $\text{degree(robot)}=1$ and nodes
+with $\text{degree(robot)}\geq2$ for the star formation, which is a progress
+index in each case. The $\lambda_2$ of the manipulated spanning tree and the
+whole graph examine the connectivity awareness of our method which has to stay
+greater than zero over the experiment. In the specific case of line, $\lambda_2$
+of the tree reduces with time and reaches a constant value when the line has
+been straightened out. Also, $\lambda_2$ of the graph will approach the same
+value, if $R_{\text{mission}}$ is close to $R_{\text{range}}$, which is the minimum for a
+given connected graph of $N$ nodes. However, In the case of the star topology,
+$\lambda_2$ of the tree increases to a constant value of one at the end of the
+experiment no matter the number of nodes in the system, and the $\lambda_2$ of
+the graph increases. If $R_{\text{mission}}&lt;R_{\text{range}}/2$ it would have approached an
+all to all graph which has the maximum $\lambda_2$ for a given connected graph
+of $N$ nodes. The coverage area has been shown to decrease for the star and to
+increase for the line case which is showing the trade-off between $\lambda_2$
+and the coverage area and that is why topology manipulation is needed to provide
+flexibility. Furthermore, for the star formation, we have plotted the number of
+nodes with $\text{degree(robot)}=1$ and the number of nodes with
+$\text{degree(robot)}\geq2$. This is to show that the manipulation operations
+are changing the topology closer to the star topology with time. The number of
+nodes with $\text{degree(robot)}=1$ for the star case increases to $N-1$ and
+there is exactly one node that has $N-1$ neighbors, which is the root. The plots
+show the evolution of these metrics which is increasing for the number of nodes
+with $\text{degree(robot)}=1$ and decreasing for the number of nodes with
+$\text{degree(robot)}\geq2$. For line formation, we have shown a similar metric
+that reduces to 2 for the number of nodes $\text{degree(robot)}=1$ and increases
+to $N-2$ for the number of nodes $\text{degree(robot)}=2$ which is the
+definition of a line topology.</p>
+<h2 id="setting-up-the-simlations-for-line-and-star-in-argos3-and-buzz">Setting up the simlations for Line and Star in Argos3 and Buzz.</h2>
+<p>The code for the experiments can be found <a href="https://git.mistlab.ca/skarthik/local-operations-on-trees">here</a>.
+ARGoS3 Simulator ARGoS3 simulator can also be installed from binaries please refer to the official website for more information: https://www.argos-sim.info/
+The instructions below are for installing ARGoS3 from its source.
+Official code repository: https://github.com/ilpincy/argos3
+Dependencies for ARGoS3 can be installed using the following command:</p>
+<div class="code"><pre class="code literal-block">sudo apt-get install cmake libfreeimage-dev libfreeimageplus-dev \
 qt5-default freeglut3-dev libxi-dev libxmu-dev liblua5.3-dev \
-lua5.3 doxygen graphviz graphviz-dev asciidoc</code></pre>
-<p>Installations for Argos3</p>
-<pre><code>$ git clone https://github.com/ilpincy/argos3.git argos3
-$ cd argos3
-$ mkdir build_simulator
-$ cd build_simulator
-$ cmake ../src
-$ make
-$ sudo make install</code></pre>
+lua5.3 doxygen graphviz graphviz-dev asciidoc
+</pre></div>
+
+<p>Installations for Argos3 </p>
+<div class="code"><pre class="code literal-block">$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ilpincy/argos3.git<span class="w"> </span>argos3
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>argos3
+$<span class="w"> </span>mkdir<span class="w"> </span>build_simulator
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build_simulator
+$<span class="w"> </span>cmake<span class="w"> </span>../src
+$<span class="w"> </span>make
+$<span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install
+</pre></div>
+
 <p>Installations for Buzz</p>
-<pre><code>$ cd Buzz
-$ mkdir build
-$ cd build
-$ cmake ../src
-$ sudo make install
-$ sudo ldconfig</code></pre>
+<div class="code"><pre class="code literal-block">$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Buzz
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+$<span class="w"> </span>cmake<span class="w"> </span>../src
+$<span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install
+$<span class="w"> </span>sudo<span class="w"> </span>ldconfig
+</pre></div>
+
 <p>Installations for Khepera V</p>
-<pre><code>$ git clone https://github.com/ilpincyargos3-kheperaiv.git
-$ mkdir build_sim
-$ cd build_sim
-$ cmake -DCMAKE_BUILD_TYPE=Release ../src
-$ make
-$ sudo make install</code></pre>
+<div class="code"><pre class="code literal-block">$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ilpincyargos3-kheperaiv.git
+$<span class="w"> </span>mkdir<span class="w"> </span>build_sim
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build_sim
+$<span class="w"> </span>cmake<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>../src
+$<span class="w"> </span>make
+$<span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install
+</pre></div>
+
 <p>Building the loop function for ARGoS:</p>
-<pre><code>$ cd files/loop_fun_src/
-$ mkdir build
-$ cd build/
-$ cmake ..
-$ make</code></pre>
-<p>Building the buzz script.</p>
-<pre><code>$ cd buzz_scripts
-$ bzzc leaf_transfer2.bzz/leaflize_15.bzz/leaflize_30.bzz/leaflize_60.bzz
-# for line/star_15/star_30/star_60</code></pre>
-<pre><code>To run the Argos3 file. 
-argos3 -c files/star.argos # for 15 robots
-argos3 -c files/line.argos # for 15 robots</code></pre>
+<div class="code"><pre class="code literal-block">$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>files/loop_fun_src/
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build/
+$<span class="w"> </span>cmake<span class="w"> </span>..
+$<span class="w"> </span>make
+</pre></div>
+
+<p>Building the buzz script. </p>
+<div class="code"><pre class="code literal-block">$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>buzz_scripts
+$<span class="w"> </span>bzzc<span class="w"> </span>leaf_transfer2.bzz/leaflize_15.bzz/leaflize_30.bzz/leaflize_60.bzz
+<span class="c1"># for line/star_15/star_30/star_60</span>
+</pre></div>
+
+<div class="code"><pre class="code literal-block"><span class="nv">To</span><span class="w"> </span><span class="nv">run</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">Argos3</span><span class="w"> </span><span class="nv">file</span>.<span class="w"> </span>
+<span class="nv">argos3</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">files</span><span class="o">/</span><span class="nv">star</span>.<span class="nv">argos</span><span class="w"> </span>#<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="mi">15</span><span class="w"> </span><span class="nv">robots</span>
+<span class="nv">argos3</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">files</span><span class="o">/</span><span class="nv">line</span>.<span class="nv">argos</span><span class="w"> </span>#<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="mi">15</span><span class="w"> </span><span class="nv">robots</span>
+</pre></div>
+
 <hr>
 <h2 id="video-for-60-robots-line-and-star-formation">Video for 60 robots (line and star formation)</h2>
-<iframe width="1100" height="500" src="https://www.youtube.com/embed/QNoxGxlbseE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><iframe width="1100" height="500" src="https://www.youtube.com/embed/QNoxGxlbseE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <hr>
 </div>
 </article>
-</div>
+
+  </div>
 
   <div class="container">
     <hr>
@@ -392,5 +418,7 @@ argos3 -c files/line.argos # for 15 robots</code></pre>
   ga('send', 'pageview');
 
 </script>
+
+
 </body>
 </html>

@@ -84,7 +84,14 @@ MathJax.Hub.Config({
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
-  </nav><div class="container">
+  </nav>
+
+  
+
+  
+
+
+  <div class="container">
   
 <article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="page-header" itemprop="headline name">On the Robustness of Consensus-based Behaviors for Robot Swarms</h1>
 
@@ -120,7 +127,10 @@ MathJax.Hub.Config({
         <strong> # Return local value if </strong>
         <strong> # - Remote value is smaller than local, OR </strong>
         <strong> # - Values are equal, robot of remote record is smaller than local one </strong>
-        if(r.data # Otherwise return remote value 
+        if(r.data &lt; l.data or (r.data == l.data and r.robot &lt; l.robot)) {
+            return l
+        }
+        <strong># Otherwise return remote value </strong>
         else return r
         })
         <strong> # Initialize vstig </strong>
@@ -144,7 +154,7 @@ MathJax.Hub.Config({
        <p style="text-align:justify;"> In ARGoS, we have conducted 500 simulations on cluster, scale free and line swarms with different packet loss probabilities, that is 100 simulations for each packet loss probability. The same has been done in the real word experiments where we used a set of of Khepera IV robots [4] connected by a standard 2.4GHz wireless network.</p>
 
        <p style="text-align:justify;"> The following figures depict a comparison between our proposed model (SMC model), ARGoS and real-world experiments. For the 3 studied topologies (Cluster, Scale-free and Line), the figures show that our model exhibits a convergence time similar to what was recorded using ARGoS and Kheperas. These results confirm that our SMC model is representative of the real robot behavior.</p>
-        <img src="../2018%20/PTA_generic.png" class="img-responsive" alt="5-robot cluster topology align=" left width="45%" height="10%"><hr>
+        <img src="../2018%20/PTA_generic.png" class="img-responsive" alt="5-robot cluster topology align=" left" width="45%" height="10%" "><hr>
 <h3>Cluster Topology</h3>
 
                     <table><tr>
@@ -201,7 +211,8 @@ MathJax.Hub.Config({
 </div>
     </div>
 </article>
-</div>
+
+  </div>
 
   <div class="container">
     <hr>
@@ -243,5 +254,7 @@ MathJax.Hub.Config({
   ga('send', 'pageview');
 
 </script>
+
+
 </body>
 </html>

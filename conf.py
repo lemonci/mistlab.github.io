@@ -195,7 +195,7 @@ FILES_FOLDERS = {'files': '' }
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
     "rest": ('.rst', '.txt'),
-    #"markdown": ('.md', '.mdown', '.markdown'),
+    "markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
@@ -209,7 +209,7 @@ COMPILERS = {
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    "pandoc": ( '.md', '.mdown','.markdown'),
+    # "pandoc": ( '.md', '.mdown','.markdown'),
 }
 
 # Create by default posts in one file format?
@@ -577,7 +577,7 @@ MathJax.Hub.Config({
 # done in the code, hope you don't mind ;-)
 # Note: most Nikola-specific extensions are done via the Nikola plugin system,
 #       with the MarkdownExtension class and should not be added here.
-MARKDOWN_EXTENSIONS = ['extra','toc','markdown.extensions.extra']
+MARKDOWN_EXTENSIONS = ['extra', 'toc', 'codehilite', 'tables', 'fenced_code','markdown.extensions.extra']
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.

@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-<div markdown="0" class="pull-right panel panel-primary">
+<div markdown="1" class="pull-right panel panel-primary">
 
 <div class="panel-heading">
 
@@ -16,7 +16,7 @@
 
 </div>
 
-<div markdown="span" class="panel-body">  
+<div markdown="1" class="panel-body">  
 
 [TOC]
 

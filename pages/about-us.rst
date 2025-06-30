@@ -41,7 +41,7 @@ It's Nice To meet you
    <img class="pull-right" src="/images/mistlogo.png" width="40%" style="margin-top: 0px;"/>
    <h3>MIST Lab</h3>
    <h4>Polytechnique Montreal</h4>
-   <p>2500 chemin de Polytechmiqe.<br>
+   <p>2500 chemin de Polytechnique.<br>
       Montreal, QC, Canada, H3T 1J4<br>
    </p>
    <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (514) 340-4711 x2370</p>

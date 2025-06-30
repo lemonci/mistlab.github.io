@@ -6,7 +6,15 @@ jobs:
     name: 'Deploy Nikola to GitHub Pages'
     steps:
     - name: Check out
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+      with:
+        set-safe-directory: true
+      
+    - name: Fix git safe.directory in container
+      run: |
+        mkdir -p /home/runner/work/_temp/_github_home
+        printf "[safe]\n\tdirectory = /github/workspace" > /home/runner/work/_temp/_github_home/.gitconfig
+        
     - name: Build and Deploy Nikola
       uses: getnikola/nikola-action@v4
       with:

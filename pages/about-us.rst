@@ -36,13 +36,15 @@ It's Nice To meet you
    </div>
    <div class="col-lg-5">
      </div></div><div class="col-lg-7">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44743.69551272658!2d-73.6064564127952!3d45.50039571105371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9198ce22ed24d%3A0x733df471f5d54536!2sPavillons+Pierre-Lassonde+et+Claudette+McKay-Lassonde%2C+2500+Chemin+de+Polytechnique!5e0!3m2!1sen!2s!4v1402500602803" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+     <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44743.69551272658!2d-73.6064564127952!3d45.50039571105371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9198ce22ed24d%3A0x733df471f5d54536!2sPavillons+Pierre-Lassonde+et+Claudette+McKay-Lassonde%2C+2500+Chemin+de+Polytechnique!5e0!3m2!1sen!2s!4v1402500602803" width="100%" height="350" frameborder="0" style="border:0"></iframe-->
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.1126309058778!2d-73.61642287137738!3d45.50100869818461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc919f308df50f9%3A0x1c5cdca60001c62e!2sUdeM%20%E2%80%93%20Andr%C3%A9-Aisenstadt%20Pavillon!5e0!3m2!1sen!2sca!4v1758227393629!5m2!1sen!2sca" width="100%" height="350" frameborder="0" style="border:0"></iframe>
      </div><div class="col-lg-5"><img src="/images/poly.jpg" width="100%"/>
    <img class="pull-right" src="/images/mistlogo.png" width="40%" style="margin-top: 0px;"/>
    <h3>MIST Lab</h3>
    <h4>Polytechnique Montreal</h4>
-   <p>2500 chemin de Polytechnique.<br>
-      Montreal, QC, Canada, H3T 1J4<br>
+   <p>André-Aisenstadt Pavillon<br>
+      2920 Chemin de la Tour<br>
+      Montreal, QC, Canada, H3T 1N8<br>
    </p>
    <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (514) 340-4711 x2370</p>
    <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:info@mistlab.ca">info@mistlab.ca</a></p>

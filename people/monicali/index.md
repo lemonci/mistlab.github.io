@@ -7,8 +7,9 @@ I received a master's degree in computer science from Bishop's University in Jan
 - Research on 3D Gaussian mapping for multi-robot Simultaneous Localisation And Mapping (SLAM). My current work is in close collaboration with professor Daniele De Martini's research group at the Oxford Robotics Institute (ORI).
 
 ## + Recent Scholarships and Awards
-
+- Richard J. Schmeelk Canada Fellowship (2025)
 - FRQ-CRIAQ Next Generation of Women in Aerospace Scholarship (2025)
+- WEDO Canada National scholarship (2025)
 - Vanier Canada Graduate Scholarships (2024)
 
 ## + Select Publications

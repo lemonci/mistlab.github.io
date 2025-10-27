@@ -26,7 +26,7 @@ It's Nice To meet you
 .. class:: lead
 
    We are a laboratory dedicated to computer engineering targeted
-   towards *space technologies*. The lab is located in the Lassonde
+   towards *space technologies*. The lab is located in the André-Aisenstadt Pavillon
    Building, at `Polytechnique Montreal <http://www.polymtl.ca>`_,
    situated on the campus of the University of Montreal. The lab is
    just a few metro stops away from Montreal’s lively downtown area.
@@ -42,7 +42,7 @@ It's Nice To meet you
    <img class="pull-right" src="/images/mistlogo.png" width="40%" style="margin-top: 0px;"/>
    <h3>MIST Lab</h3>
    <h4>Polytechnique Montreal</h4>
-   <p>André-Aisenstadt Pavillon<br>
+   <p>6199, André-Aisenstadt Pavillon<br>
       2920 Chemin de la Tour<br>
       Montreal, QC, Canada, H3T 1N8<br>
    </p>

@@ -9,6 +9,7 @@ I received a master's degree in computer science from Bishop's University in Jan
 ## + Recent Scholarships and Awards
 - Richard J. Schmeelk Canada Fellowship (2025)
 - FRQ-CRIAQ Next Generation of Women in Aerospace Scholarship (2025)
+- WEDO Canada National scholarship (2025)
 - Vanier Canada Graduate Scholarships (2024)
 
 ## + Select Publications

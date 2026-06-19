@@ -27,7 +27,7 @@ description: "The MIST Lab pushes the boundaries of autonomous robotics at Polyt
     </div>
   </div>
   <div class="hero-logos">
-    <img src="{{ '/assets/images/university_logo.png' | url }}" alt="Polytechnique Montréal">
+    <img class="uni-logo" src="{{ '/assets/images/university_logo.png' | url }}" alt="Polytechnique Montréal">
   </div>
 </section>
 
@@ -255,13 +255,11 @@ description: "The MIST Lab pushes the boundaries of autonomous robotics at Polyt
         </div>
       {% else %}
         <a href="{{ company.url }}" target="_blank" class="spinoff-card">
+          {% if company.logo %}
           <div class="spinoff-logo-wrap">
-            {% if company.logo %}
-              <img src="{{ ('/assets/images/' + company.logo) | url }}" alt="{{ company.name }}" style="height:28px;">
-            {% else %}
-              <span style="font-family:var(--font-head); font-size:16px; font-weight:700; color:var(--text);">{{ company.name }}</span>
-            {% endif %}
+            <img src="{{ ('/assets/images/' + company.logo) | url }}" alt="{{ company.name }}" style="height:28px;">
           </div>
+          {% endif %}
           <h3>{{ company.name }}</h3>
           <p class="spinoff-desc">{{ company.description }}</p>
           <span class="spinoff-link">{{ company.link_label }}</span>

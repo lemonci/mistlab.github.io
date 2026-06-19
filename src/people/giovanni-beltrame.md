@@ -1,7 +1,7 @@
 ---
 name: Giovanni Beltrame
 role: faculty
-title: Professor · Lab Director
+title: Full Professor
 photo: giovanni-beltrame.jpg
 short_bio: Leads research at the intersection of swarm intelligence, autonomous field robots, and space science — pushing robots into the most challenging environments on Earth and beyond.
 tags: [Swarm Intelligence, Field Robotics, Space Systems]

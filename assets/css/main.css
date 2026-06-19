@@ -118,6 +118,10 @@ nav {
   display: flex; align-items: center; gap: 24px;
 }
 .hero-logos img { height: 32px; opacity: 0.7; filter: brightness(10); }
+/* Polytechnique logo is supplied as white artwork — show it as-is (no
+   brightness filter, no background chip). */
+.uni-logo { filter: none !important; opacity: 1 !important; }
+.hero-logos .uni-logo { height: 40px; }
 
 /* STATS BAR */
 .stats-bar {
@@ -415,6 +419,7 @@ footer {
 .footer-logos { display: flex; align-items: center; gap: 24px; }
 .footer-logos img { height: 28px; opacity: 0.5; filter: brightness(10); }
 .footer-logos img.lab-logo { filter: none; opacity: 0.7; }
+.footer-logos .uni-logo { height: 34px; }
 footer p { color: var(--muted); font-size: 15px; }
 .footer-funders { display: flex; gap: 12px; flex-wrap: wrap; }
 .funder { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; color: var(--muted); padding: 4px 10px; border: 1px solid var(--border); border-radius: 3px; }

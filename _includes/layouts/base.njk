@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — {% endif %}MIST Lab · Polytechnique Montréal</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}The MIST Lab pushes the boundaries of autonomous robotics at Polytechnique Montréal — from swarms of drones to lunar rovers.{% endif %}">
+  <link rel="icon" href="{{ '/assets/images/lab_logo.svg' | url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+</head>
+<body>
+
+{% include "nav.njk" %}
+
+{{ content | safe }}
+
+{% include "footer.njk" %}
+
+<script src="{{ '/assets/js/scroll-reveal.js' | url }}"></script>
+</body>
+</html>

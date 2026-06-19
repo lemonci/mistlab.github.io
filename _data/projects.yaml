@@ -1,0 +1,73 @@
+# Research projects
+# active: false → not shown on /projects/ page
+# featured: true → shown in Research section on home page
+# image: filename under assets/images/projects/ (leave empty for placeholder)
+# paper_doi: DOI without https://doi.org/ prefix, e.g. "10.1109/ICRA.2024.XXXXX"
+
+- title: Robot Autonomy
+  slug: robot-autonomy
+  description: >
+    Enabling robots to perceive, reason, and act in complex, GPS-denied environments
+    with minimal human intervention.
+  image: ""
+  tags:
+    - Autonomy
+    - Perception
+    - SLAM
+  github: ""
+  paper_doi: ""
+  active: true
+  featured: true
+  icon: |
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg>
+
+- title: Swarm Robotics
+  slug: swarm-robotics
+  description: >
+    Coordinating dozens of robots to achieve collective intelligence — decentralized,
+    resilient, and scalable beyond any single platform.
+  image: ""
+  tags:
+    - Swarm Robotics
+    - Multi-Robot
+    - Decentralized
+  github: https://github.com/MISTLab
+  paper_doi: ""
+  active: true
+  featured: true
+  icon: |
+    <svg viewBox="0 0 24 24"><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="12" r="2"/><line x1="7" y1="5" x2="17" y2="5"/><line x1="5" y1="7" x2="5" y2="17"/><line x1="7" y1="19" x2="17" y2="19"/><line x1="19" y1="7" x2="19" y2="17"/></svg>
+
+- title: Field Robotics
+  slug: field-robotics
+  description: >
+    Deploying systems in real-world hostile conditions: lava fields, underground caves,
+    arctic terrain, and simulated planetary surfaces.
+  image: ""
+  tags:
+    - Field Robotics
+    - UAV
+    - Legged Robots
+  github: ""
+  paper_doi: ""
+  active: true
+  featured: true
+  icon: |
+    <svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 4-6 4 10"/><path d="M3 21h18"/></svg>
+
+- title: SW Engineering for Robotics
+  slug: sw-engineering
+  description: >
+    Building robust, reusable software architectures that make complex robot systems
+    reliable and deployable at scale.
+  image: ""
+  tags:
+    - Software Engineering
+    - ROS2
+    - Open Source
+  github: https://github.com/MISTLab
+  paper_doi: ""
+  active: true
+  featured: true
+  icon: |
+    <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="2" x2="12" y2="22"/></svg>

@@ -1,0 +1,14 @@
+{
+  "name": "mist-lab-website",
+  "version": "1.0.0",
+  "description": "MIST Lab website — Polytechnique Montréal",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "fetch-pubs": "node scripts/fetch-publications.js"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

@@ -1,0 +1,31 @@
+# News items — sorted by date descending automatically
+# date: ISO 8601 format (YYYY-MM-DD)
+# image: filename under assets/images/missions/ or assets/images/
+# link: optional external URL (leave empty if no link)
+
+- title: MIST Lab Deploys Swarm at ESA Planetary Analogue Site
+  date: "2025-03-15"
+  summary: >
+    Our team traveled to Lanzarote for the latest round of ESA PANGAEA-X field trials,
+    deploying a swarm of 12 drones over volcanic terrain.
+  image: mission2.jpg
+  tag: Field Mission
+  link: ""
+
+- title: Spot + UAV Hybrid System Tested in Winter Conditions
+  date: "2025-01-20"
+  summary: >
+    New research integrating aerial and legged robots demonstrates robust autonomy
+    in challenging winter environments.
+  image: mission5.jpg
+  tag: Research
+  link: ""
+
+- title: New Unitree G1 Humanoid Joins the Lab's Robot Fleet
+  date: "2024-09-01"
+  summary: >
+    With the addition of a G1 humanoid robot, MIST Lab expands its research into
+    legged locomotion and human-robot interaction.
+  image: robot_photo.jpg
+  tag: Equipment
+  link: ""

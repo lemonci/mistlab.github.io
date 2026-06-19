@@ -1,0 +1,54 @@
+# Lab alumni, shown as a table at the bottom of the People page.
+# To move a current member here: add a line below (and delete their file
+# from src/people/, or keep it — only people with .md files get pages).
+# Fields: name (required), role (required), year (optional), now_at (optional)
+- { name: Fang Wu, role: Postdoctoral Fellow }
+- { name: Ivan Svogor, role: Postdoctoral Researcher }
+- { name: Christophe Marcel Trouillefou, role: Postdoctoral Researcher }
+- { name: David St-Onge, role: Postdoctoral Researcher, now_at: "ÉTS Montréal (Professor)" }
+- { name: Carlo Pinciroli, role: Postdoctoral Researcher, now_at: "Worcester Polytechnic Institute (Professor)" }
+- { name: Jacopo Panerati, role: Postdoctoral Fellow }
+- { name: Meng Li, role: Postdoctoral Researcher }
+- { name: Luca G. Gianoli, role: Postdoctoral Researcher }
+- { name: Ricardo de Azambuja, role: Postdoctoral Fellow }
+- { name: Cao Yanjun, role: PhD Student }
+- { name: Wenqiang Du, role: PhD Student }
+- { name: Marcel Kaufmann, role: PhD Student }
+- { name: Imane Hafnaoui, role: PhD Student }
+- { name: Olfat I. El-Mahi, role: PhD Student }
+- { name: Majda Moussa, role: PhD Student }
+- { name: Chao Chen, role: PhD Student }
+- { name: Guannan Li, role: Exchange PhD Student }
+- { name: Dong Wang, role: Master Student }
+- { name: David Vielfaure, role: Master Student }
+- { name: Nicolas Valenchon, role: Master Student }
+- { name: Benjamin Ramtoula, role: Master Student, now_at: University of Oxford }
+- { name: Lucas Meyer, role: Master Student }
+- { name: Sami Riahi, role: MSc Student }
+- { name: Maxime Barthelemy, role: MSc Student }
+- { name: Amira Aouina, role: Master Student }
+- { name: Hassan Anwar, role: MSc Student }
+- { name: Mohamed Amine Kennich, role: Master Student }
+- { name: Erica Bugden, role: Research Assistant }
+- { name: Moritz Sperling, role: Intern (Master's Thesis) }
+- { name: Roberta Piscitelli, role: PBEEE Visiting Scholar }
+- { name: Nathalie Majcherczyk, role: Graduate Intern }
+- { name: Christophe Bédard, role: Intern }
+- { name: Emir Khaled Belhaddad, role: Intern }
+- { name: Anthony Dentinger, role: Intern }
+- { name: Vedant, role: Intern }
+- { name: Nguyen-Nghia Do, role: Research Intern }
+- { name: Naman Govil, role: Intern }
+- { name: Christian Guss, role: MITACS Globalink Intern }
+- { name: Jayant Harilela, role: Research Intern }
+- { name: Prakash Hemani, role: Intern }
+- { name: Kwek Jing Yang, role: Research Intern }
+- { name: Adam Lee-Brown, role: Intern }
+- { name: Yixiu Liu, role: Research Intern }
+- { name: Chong Yeh Sai, role: Research Intern }
+- { name: Deboleena Roy, role: MITACS Globalink Intern }
+- { name: Ismail Ben Ali Ouriaghli, role: UPIR Intern }
+- { name: Mikael Capelle, role: Intern }
+- { name: Bianca Angotti, role: Intern }
+- { name: Oana Neagu, role: Intern }
+- { name: Florian Fougeanet, role: Intern }

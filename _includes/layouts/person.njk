@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+---
+<div class="person-page">
+  <a href="{{ '/people/' | url }}" class="person-back">← All People</a>
+
+  <div class="person-header">
+    <div class="person-photo">
+      {% if photo %}
+        <img src="{{ ('/assets/images/people/' + photo) | url }}" alt="{{ name }}">
+      {% else %}
+        <div class="person-photo-placeholder">{{ name | initials }}</div>
+      {% endif %}
+    </div>
+    <div class="person-meta">
+      <h1>{{ name }}</h1>
+      <div class="person-title">{{ title }}</div>
+      {% if supervisor %}
+        <div class="person-supervisor">Supervised by {{ supervisor }}</div>
+      {% endif %}
+
+      {% if tags %}
+        <div class="prof-tags" style="margin-top:16px;">
+          {% for tag in tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="person-links">
+        {% if email %}<a href="mailto:{{ email }}">✉ Email</a>{% endif %}
+        {% if website %}<a href="{{ website }}" target="_blank">Website →</a>{% endif %}
+        {% if scholar %}<a href="https://scholar.google.com/citations?user={{ scholar }}" target="_blank">Google Scholar →</a>{% endif %}
+        {% if github %}<a href="https://github.com/{{ github }}" target="_blank">GitHub →</a>{% endif %}
+        {% if linkedin %}<a href="{{ linkedin }}" target="_blank">LinkedIn →</a>{% endif %}
+        {% if orcid %}<a href="https://orcid.org/{{ orcid }}" target="_blank">ORCID →</a>{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="person-body">
+    {{ content | safe }}
+  </div>
+</div>

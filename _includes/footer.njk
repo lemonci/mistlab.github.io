@@ -1,0 +1,10 @@
+<footer>
+  <div class="footer-logos">
+    <img class="lab-logo" src="{{ '/assets/images/lab_logo.svg' | url }}" alt="MIST Lab" style="height:36px;">
+    <img src="{{ '/assets/images/university_logo.png' | url }}" alt="Polytechnique Montréal">
+  </div>
+  <p>
+    {% for line in site.address %}{{ line }}{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+  <p>© {% year %} MIST Lab · Polytechnique Montréal</p>
+</footer>

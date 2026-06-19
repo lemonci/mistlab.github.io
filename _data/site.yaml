@@ -1,0 +1,32 @@
+# Global site settings: contact info, stats bar, funders.
+name: MIST Lab
+tagline: Polytechnique Montréal · Autonomous Robotics
+email: info@mistlab.ca
+github: https://github.com/MISTLab
+university: Polytechnique Montréal
+university_url: https://www.polymtl.ca
+google_scholar: TVHJJ9wAAAAJ
+
+address:
+  - MIST Lab — Polytechnique Montréal
+  - 6199, André-Aisenstadt Pavillon
+  - 2920 Chemin de la Tour
+  - Montréal, QC, Canada, H3T 1N8
+
+stats:
+  - num: "3"
+    suffix: "×"
+    label: Faculty Professors
+  - num: "20"
+    suffix: "+"
+    label: Researchers & Students
+  - num: "100"
+    suffix: "+"
+    label: Publications
+
+funders:
+  - NSERC
+  - FRQNT
+  - CSA
+  - CRIAQ
+  - ESA

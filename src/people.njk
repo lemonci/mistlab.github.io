@@ -1,0 +1,119 @@
+---
+layout: layouts/base.njk
+title: People
+permalink: /people/
+---
+
+<div class="page-header">
+  <div class="section-label">The Team</div>
+  <h1>Faculty &amp; Students</h1>
+  <p>Meet the researchers, engineers, and students driving autonomous robotics at MIST Lab.</p>
+</div>
+
+{# ---- Faculty: large cards ---- #}
+<section id="people" style="background: var(--bg);">
+  <div class="section-label reveal">Faculty</div>
+  <h2 class="reveal">Principal Investigators</h2>
+  <div class="professors-grid reveal">
+    {% for person in collections.people | byRole("faculty") %}
+      <a href="{{ person.url | url }}" class="prof-card" style="text-decoration:none; color:inherit;">
+        <div class="prof-photo" style="background: linear-gradient(135deg, #13161d, #1e2535);">
+          {% if person.data.photo %}
+            <img src="{{ ('/assets/images/people/' + person.data.photo) | url }}" alt="{{ person.data.name }}">
+          {% else %}
+            <div class="prof-photo-placeholder">{{ person.data.name | initials }}</div>
+          {% endif %}
+        </div>
+        <div class="prof-info">
+          <h3>{{ person.data.name }}</h3>
+          <div class="prof-title">{{ person.data.title }}</div>
+          <p>{{ person.data.short_bio }}</p>
+          <div class="prof-tags">
+            {% for tag in person.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+{# ---- Other roles: compact cards, grouped by _data/roles.yaml ---- #}
+<section class="students-section">
+  <div class="section-label reveal">Researchers &amp; Students</div>
+  <h2 class="reveal">The Team</h2>
+
+  {% for role in roles %}
+    {% if role.key != "faculty" %}
+      {% set group = collections.people | byRole(role.key) %}
+      {% if group.length > 0 %}
+        <div class="student-level-group reveal">
+          <div class="student-level-label">{{ role.label }}</div>
+          <div class="students-grid">
+            {% for person in group %}
+              <a href="{{ person.url | url }}" class="student-card" style="text-decoration:none; color:inherit;">
+                <div class="student-photo-wrap">
+                  {% if person.data.photo %}
+                    <img src="{{ ('/assets/images/people/' + person.data.photo) | url }}" alt="{{ person.data.name }}">
+                  {% else %}
+                    <div class="student-initials">{{ person.data.name | initials }}</div>
+                  {% endif %}
+                </div>
+                <h4>{{ person.data.name }}</h4>
+                {% if person.data.supervisor %}
+                  <div class="student-supervisor">Supervisor: {{ person.data.supervisor }}</div>
+                {% endif %}
+                {% if person.data.short_bio %}
+                  <div class="student-topic">{{ person.data.short_bio }}</div>
+                {% endif %}
+                {% if person.data.tags %}
+                  <div class="student-tags">
+                    {% for tag in person.data.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+                  </div>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</section>
+
+{# ---- Alumni table from _data/alumni.yaml ---- #}
+{% if alumni and alumni.length > 0 %}
+<section class="alumni-section" style="background: var(--surface);">
+  <div class="section-label reveal">Alumni</div>
+  <h2 class="reveal">Lab Alumni</h2>
+  <table class="alumni-table reveal">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Now At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for alum in alumni %}
+        <tr>
+          <td>{{ alum.name }}</td>
+          <td>{{ alum.role }}{% if alum.year %} ({{ alum.year }}){% endif %}</td>
+          <td>{{ alum.now_at or "—" }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+
+{# ---- Team photo ---- #}
+<section style="padding: 0 72px 100px; background: var(--bg);">
+  <div class="team-photo-strip reveal">
+    <img src="{{ '/assets/images/team_photo.jpg' | url }}" alt="MIST Lab Team">
+    <div class="team-photo-strip-overlay">
+      <div class="team-strip-text">
+        <h3>A World-Class Team</h3>
+        <p>Researchers, engineers, and explorers united by a passion for pushing autonomous systems beyond their limits.</p>
+      </div>
+    </div>
+  </div>
+</section>

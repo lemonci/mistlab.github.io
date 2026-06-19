@@ -1,0 +1,11 @@
+# Spin-off companies founded by MIST Lab members
+# url: company website URL (leave "#" if not yet live)
+# logo: filename under assets/images/ (leave empty for text-only)
+# placeholder: true → shown as "your spin-off here" placeholder slot
+
+- name: Uncharted AI
+  url: "https://www.uncharted-ai.com"
+  logo: ""
+  description: "AI-powered field robotics for challenging environments — from caves to industrial inspection."
+  link_label: "uncharted.ai →"
+  placeholder: false

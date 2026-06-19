@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+<div class="page-header">
+  {% if section_label %}
+    <div class="section-label">{{ section_label }}</div>
+  {% endif %}
+  <h1>{{ page_title or title }}</h1>
+  {% if page_description %}
+    <p>{{ page_description }}</p>
+  {% endif %}
+</div>
+
+{{ content | safe }}

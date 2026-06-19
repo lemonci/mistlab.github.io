@@ -1,0 +1,45 @@
+# Field mission gallery images
+# image: filename under assets/images/missions/
+# label: caption displayed on the tile
+# css_class: grid positioning class (m1–m8, controls size in the grid)
+
+tiles:
+  - image: mission2.jpg
+    label: "ESA PANGAEA-X · Lanzarote"
+    css_class: m1
+
+  - image: mission1.jpg
+    label: "Swarm Deployment · Field Test"
+    css_class: m2
+
+  - image: mission5.jpg
+    label: "Spot + UAV · Winter Operations"
+    css_class: m3
+
+  - image: mission6.jpg
+    label: "BRAILLE · Ground Autonomy"
+    css_class: m4
+
+  - image: mission4.jpg
+    label: "UAS · Campus Deployment"
+    css_class: m5
+
+  - image: mission8.jpg
+    label: "ESA Analogue Mission · Planetary Surface"
+    css_class: m6
+
+  - image: mission7.jpg
+    label: "MEXPÉ · SpéléoQC Cave Mission"
+    css_class: m7
+
+  - image: mission3.jpg
+    label: "Mission Control · IGLUNA"
+    css_class: m8
+
+partners:
+  - "ESA · PANGAEA-X"
+  - "ESA · IGLUNA"
+  - "NASA JPL · DARPA SubT"
+  - "NASA JPL · BRAILLE"
+  - "SpéléoQC · MEXPÉ"
+  - "CSA Prospecting Challenge"

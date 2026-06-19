@@ -1,0 +1,710 @@
+{
+  "generated_at": "2026-06-19T18:25:16.569Z",
+  "total": 88,
+  "publications": [
+    {
+      "title": "EA-IPP2n: Energy-Aware Informative Path Planning Algorithm for UAVs",
+      "year": "2026",
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/ACCESS.2026.3673288",
+      "authors": "A. Merei, H. Mcheick, A. Ghaddar, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Scalable Multi-Agent Reinforcement Learning Framework for Multi-Machine Tending",
+      "year": "2026",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2026.3655200",
+      "authors": "A. B. M. Abdalwhab, G. Beltrame, D. St-Onge",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Split Over n Resource Sharing Problem: Are Fewer Capable Agents Better Than Many Simpler Ones?",
+      "year": "2026",
+      "venue": "",
+      "doi": "https://doi.org/10.1007/978-3-032-26123-6_39",
+      "authors": "K. Soma, M. S. Talamali, G. Miyauchi, G. Beltrame, H. Hamann, R. Groß",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "3D Foundation Model-Based Loop Closing for Decentralized Collaborative SLAM",
+      "year": "2025",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2025.3609204",
+      "authors": "P.-Y. Lajoie, B. Ramtoula, D. De Martini, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Blockchain Framework for Equitable and Secure Task Allocation in Robot Swarms",
+      "year": "2025",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2025.3606349",
+      "authors": "H. Zhao, A. Pacheco, G. Beltrame, X. Liu, M. Dorigo, G. Dudek",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Multi-Robot Exploration Planner for Space Applications",
+      "year": "2025",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2025.3532158",
+      "authors": "V. S. Varadharajan, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Attention-Based Multi-Agent RL for Multi-Machine Tending Using Mobile Robots",
+      "year": "2025",
+      "venue": "AI",
+      "doi": "https://doi.org/10.3390/ai6100252",
+      "authors": "A. B. M. Abdalwhab, G. Beltrame, S. E. Kahou, D. St-Onge",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Event-Based Vision for Robot Soccer",
+      "year": "2025",
+      "venue": "",
+      "doi": "https://doi.org/10.1007/978-3-031-85859-8_26",
+      "authors": "S. E. Marjani Bajestani, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "GNN-Based Decentralized Perception in Multi-Robot Systems for Predicting Worker Actions",
+      "year": "2025",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2025.3566610",
+      "authors": "A. Imran, G. Beltrame, D. St-Onge",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Multirobot Decentralized Collaborative SLAM in Planetary Analogue Environments: Dataset, Challenges, and Lessons Learned",
+      "year": "2025",
+      "venue": "IEEE Transactions on Field Robotics",
+      "doi": "https://doi.org/10.1109/TFR.2025.3586209",
+      "authors": "P.-Y. Lajoie, K. Soma, H. M. Bong, A. Lemieux-Bourque, R. Zhang, V. S. Varadharajan, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Neural Incremental Dynamic Inversion Control of a Multirotor Robotic Airship",
+      "year": "2025",
+      "venue": "International Journal of Intelligent Systems",
+      "doi": "https://doi.org/10.1155/int/4962106",
+      "authors": "E. C. D. Paiva, J. R. Azinheira, R. D. A. Cordeiro, J. R. H. Carvalho, A. Marton, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Personalizing brain stimulation: continual learning for sleep spindle detection",
+      "year": "2025",
+      "venue": "Journal of Neural Engineering",
+      "doi": "https://doi.org/10.1088/1741-2552/adebb1",
+      "authors": "M. Sobral, H. R. Jourde, S. Ehsan M Bajestani, E. B. J. Coffey, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "BittyBuzz: A Swarm Robotics Runtime for Tiny Systems",
+      "year": "2024",
+      "venue": "",
+      "doi": "https://doi.org/10.1007/978-3-031-70932-6_15",
+      "authors": "U. Dah-Achinanon, E. K. Belhaddad, G. Ricard, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Byzantine Fault Detection in Swarm-SLAM Using Blockchain and Geometric Constraints",
+      "year": "2024",
+      "venue": "",
+      "doi": "https://doi.org/10.1007/978-3-031-70932-6_4",
+      "authors": "A. Moroncelli, A. Pacheco, V. Strobel, P.-Y. Lajoie, M. Dorigo, A. Reina",
+      "source_orcid": "0000-0002-7495-8567"
+    },
+    {
+      "title": "DNBP: Differentiable Nonparametric Belief Propagation",
+      "year": "2024",
+      "venue": "ACM / IMS Journal of Data Science",
+      "doi": "https://doi.org/10.1145/3592762",
+      "authors": "A. Opipari, J. Pavlasek, C. Chen, S. Wang, K. Desingh, O. C. Jenkins",
+      "source_orcid": "0000-0001-6332-2646"
+    },
+    {
+      "title": "PEOPLEx: PEdestrian Opportunistic Positioning LEveraging IMU, UWB, BLE and WiFi",
+      "year": "2024",
+      "venue": "ICC 2024 - IEEE International Conference on Communications",
+      "doi": "https://doi.org/10.1109/icc51166.2024.10622566",
+      "authors": "P. Lajoie, B. H. Baghi, S. Herath, F. Hogan, X. Liu, G. Dudek",
+      "source_orcid": "0000-0002-7495-8567"
+    },
+    {
+      "title": "Stein Variational Belief Propagation for Multi-Robot Coordination",
+      "year": "2024",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2024.3375708",
+      "authors": "J. Pavlasek, J. J. Z. Mah, R. Xu, O. C. Jenkins, F. Ramos",
+      "source_orcid": "0000-0001-6332-2646"
+    },
+    {
+      "title": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+      "year": "2024",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2023.3333742",
+      "authors": "P.-Y. Lajoie, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "CoNi-MPC: Cooperative Non-inertial Frame Based Model Predictive Control",
+      "year": "2023",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2023.3325776",
+      "authors": "B. Zhang, X. Chen, Z. Li, G. Beltrame, C. Xu, F. Gao, Y. Cao",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Feasibility of cognitive neuroscience data collection during a speleological expedition",
+      "year": "2023",
+      "venue": "",
+      "doi": "https://doi.org/10.1101/2023.12.12.571158",
+      "authors": "A. Paas, H. R. Jourde, A. Brignol, M.-A. Savard, Z. Eyqvelle, S. Bassetto, G. Beltrame, E. B. Coffey",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Message flow analysis with complex causal links for distributed ROS 2 systems",
+      "year": "2023",
+      "venue": "Robotics and Autonomous Systems",
+      "doi": "https://doi.org/10.1016/j.robot.2022.104361",
+      "authors": "C. Bédard, P.-Y. Lajoie, G. Beltrame, M. Dagenais",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Self-Supervised Domain Calibration and Uncertainty Estimation for Place Recognition",
+      "year": "2023",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2022.3232033",
+      "authors": "P.-Y. Lajoie, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Analyze, Debug, Optimize: Real-Time Tracing for Perception and Mapping Systems in ROS 2",
+      "year": "2022",
+      "venue": "Robotics Perception And Mapping Workshop, ICRA 2022",
+      "doi": "https://doi.org/10.48550/ARXIV.2204.11778",
+      "authors": "Pierre-Yves Lajoie et al.",
+      "source_orcid": "0000-0002-7495-8567"
+    },
+    {
+      "title": "Direct Sparse Odometry With Planes",
+      "year": "2022",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2021.3130648",
+      "authors": "F. Wu, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Energy Autonomy for Robot Systems With Constrained Resources",
+      "year": "2022",
+      "venue": "IEEE Transactions on Robotics",
+      "doi": "https://doi.org/10.1109/TRO.2022.3175438",
+      "authors": "H. Fouad, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Towards Collaborative Simultaneous Localization and Mapping: A Survey of the Current Research Landscape",
+      "year": "2022",
+      "venue": "Field Robotics",
+      "doi": "https://doi.org/10.55417/fr.2022032",
+      "authors": "P.-Y. Lajoie, B. Ramtoula, F. Wu, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Distributed TDMA for Mobile UWB Network Localization",
+      "year": "2021",
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "https://doi.org/10.1109/JIOT.2021.3066243",
+      "authors": "Y. Cao, C. Chen, D. St-Onge, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Real-Time Path Planning With Virtual Magnetic Fields",
+      "year": "2021",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2021.3063992",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "An Adversarial Approach to Private Flocking in Mobile Robot Teams",
+      "year": "2020",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2020.2967331",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Cluster-based Penalty Scaling for Robust Pose Graph Optimization",
+      "year": "2020",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2020.3011394",
+      "authors": "F. Wu, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "DOOR-SLAM: Distributed, Online, and Outlier Resilient SLAM for Robotic Teams",
+      "year": "2020",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2020.2967681",
+      "authors": "P.-Y. Lajoie, B. Ramtoula, Y. Chang, L. Carlone, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Planetary Exploration With Robot Teams: Implementing Higher Autonomy With Swarm Intelligence",
+      "year": "2020",
+      "venue": "IEEE Robotics & Automation Magazine",
+      "doi": "https://doi.org/10.1109/MRA.2019.2940413",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "SOUL: data sharing for robot swarms",
+      "year": "2020",
+      "venue": "Autonomous Robots",
+      "doi": "https://doi.org/10.1007/s10514-019-09855-2",
+      "authors": "V. S. Varadharajan, D. St-Onge, B. Adams, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Swarm Relays: Distributed Self-Healing Ground-and-Air Connectivity Chains",
+      "year": "2020",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2020.3006793",
+      "authors": "V. S. Varadharajan, D. St-Onge, B. Adams, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Decentralized progressive shape formation with robot swarms",
+      "year": "2019",
+      "venue": "Autonomous Robots",
+      "doi": "https://doi.org/10.1007/s10514-018-9807-5",
+      "authors": "G. Li, D. St-Onge, C. Pinciroli, A. Gasparri, E. Garone, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Long-term pattern formation and maintenance for battery-powered robots",
+      "year": "2019",
+      "venue": "Swarm Intelligence",
+      "doi": "https://doi.org/10.1007/s11721-019-00162-1",
+      "authors": "G. Li, I. Svogor, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Modeling Perceptual Aliasing in SLAM via Discrete–Continuous Graphical Models",
+      "year": "2019",
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "https://doi.org/10.1109/LRA.2019.2894852",
+      "authors": "P.-Y. Lajoie, S. Hu, G. Beltrame, L. Carlone",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Assessing the resilience of stochastic dynamic systems under partial observability",
+      "year": "2018",
+      "venue": "PLOS ONE",
+      "doi": "https://doi.org/10.1371/journal.pone.0202337",
+      "authors": "J. Panerati, N. Schwind, S. Zeltner, K. Inoue, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Dynamic Range-Only Localization for Multi-Robot Systems",
+      "year": "2018",
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/ACCESS.2018.2866259",
+      "authors": "Y. Cao, M. Li, I. Svogor, S. Wei, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Transient Thermal Simulation of Liquid-Cooled 3-D Circuits",
+      "year": "2016",
+      "venue": "IEEE Transactions on Components, Packaging and Manufacturing Technology",
+      "doi": "https://doi.org/10.1109/TCPMT.2016.2599100",
+      "authors": "A. Fourmigue, G. Beltrame, G. Nicolescu",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Low-Cost Validation Setup for the\nThermal Modelling of Electronic Devices",
+      "year": "2015",
+      "venue": "IEEE International NEW Circuits And Systems (NEWCAS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Probabilistically Analysable Cache\nImplementation on FPGA",
+      "year": "2015",
+      "venue": "IEEE International NEW Circuits And Systems (NEWCAS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Efficient Design Space Pruning for Slack Allocation\nand Lifetime Estimation for NoC-based MPSoCs",
+      "year": "2015",
+      "venue": "Computer Aided Design, IEEE Transactions\n\t\t  on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Monitoring Glaciers from Space Using a Cubesat",
+      "year": "2015",
+      "venue": "IEEE Communications Magazine",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "On the impact of sampling frequency on software energy measurements",
+      "year": "2015",
+      "venue": "",
+      "doi": "https://doi.org/10.7287/peerj.preprints.1219v2",
+      "authors": "R. Saborido, V. V. Arnaoudova, G. Beltrame, F. Khomh, G. Antoniol",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Trading Off Power and Fault-tolerance in Real-time Embedded Systems",
+      "year": "2015",
+      "venue": "NASA/ESA Adaptive Hardware and Systems",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Transient Thermal Simulation of Liquid-Cooled 3D~ICs",
+      "year": "2015",
+      "venue": "Design Automation of Embedded Systems, ACM Transactions\n\t\t  on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Comparative Evaluation of Multi-Objective Exploration\n\t\t  Algorithms for High-Level Design",
+      "year": "2014",
+      "venue": "Design Automation of Electronic Systems, ACM Transactions\n\t\t  on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Nano-satellite to Monitor Glaciers Recession Affecting\n\t\t  Biodiversity in the Canadian Arctic",
+      "year": "2014",
+      "venue": "Proc. 65th Int. Astronaut. Congr.",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Balancing System Availability and Lifetime with Dynamic\n\t\t  Hidden Markov Models",
+      "year": "2014",
+      "venue": "Adapt. Hardw. Syst. (AHS), 2014 NASA/ESA Conf.",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Efficient Transient Thermal Simulation of 3D ICs with\n\t\t  Liquid-Cooling and Through Silicon Vias",
+      "year": "2014",
+      "venue": "Proc. of the Design Automation and Test in Europe\n\t\t  Conference (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Exploring Spiking Neural Network on Coarse-Grain\n\t\t  Reconfigurable Architectures",
+      "year": "2014",
+      "venue": "Second ACM Int. Work. Manycore Embed. Sytems",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Fault-tolerant Soft Real-time Computing Systems based on\n\t\t  Dynamic Bayesian Reasoning",
+      "year": "2014",
+      "venue": "Proc. 65th Int. Astronaut. Congr.",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Genetic Task Allocation for Fixed and Dynamic Priority\n\t\t  Real-time Scheduling in Heterogeneous Multi-core Systems",
+      "year": "2014",
+      "venue": "Embedded Computing Systems, ACM Transactions on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Parameterized AES-based crypto processor for FPGAs",
+      "year": "2014",
+      "venue": "17th Euromicro Conference on Digital Systems Design (DSD)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "University students design self-healing satellites",
+      "year": "2014",
+      "venue": "",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Embedded System Verification Through Constraint-Based\n\t\t  Scheduling",
+      "year": "2013",
+      "venue": "Proc. of the Rapid System Prototyping Workshop, RSP",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Explicit Transient Thermal Analysis of Liquid-cooled\n\t\t  3D-ICs",
+      "year": "2013",
+      "venue": "Proc. of the Design Automation and Test in Europe\n\t\t  Conference (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Online Learning of Adaptation Policies within the\n\t\t  Adaptation Manager Framework",
+      "year": "2013",
+      "venue": "Proc. of the IEEE Adaptive Hardware and Systems Conference\n\t\t  (AHS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Optimizing Threads Schedule Alignments to Expose the\n\t\t  Interference Bug Pattern",
+      "year": "2012",
+      "venue": "Intl. Symp. on Search Based Software Engineering\n\t\t  (SSBSE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Parallelization Strategies of the Canny Edge Detector for\n\t\t  multi-core CPUs and many-core GPUs",
+      "year": "2012",
+      "venue": "Proc. of the IEEE Intl. NEWCAS Conference",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Linear-Time Approach for the Transient Thermal\n\t\t  Simulation of Liquid-Cooled 3D ICs",
+      "year": "2011",
+      "venue": "Proc. of the Intl. Conference HW/SW Codesign and System\n\t\t  Synthesis, CODES+ISSS",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Multi-Objective Decision-Theoretic Exploration\n\t\t  Algorithm for Platform-Based Design",
+      "year": "2011",
+      "venue": "Proc. of Design, Automation and Test in Europe (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Modelling Multi-Processor Real-Time Systems at\n\t\t  Transaction Level",
+      "year": "2011",
+      "venue": "Real-time Simulation Techniques and Principles",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Multi-Granularity Thermal Evaluation of 3D MPSoC\n\t\t  Architectures",
+      "year": "2011",
+      "venue": "Proc. of Design, Automation and Test in Europe (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "TLM simulation of MPSoCs",
+      "year": "2011",
+      "venue": "HW/SW Co-Design for Heterogeneous Multi-Core Platforms:\n\t\t  the hArtes toolchain",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Decision-Theoretic Design Space Exploration of\n\t\t  Multiprocessor Platforms",
+      "year": "2010",
+      "venue": "Computer-Aided Design of Integrated Circuits and Systems,\n\t\t  IEEE Transactions on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "NGMP Specification: Next Generation Multi-Purpose Microprocessor",
+      "year": "2010",
+      "venue": "",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "xLuna: A real-time dependable kernel for embedded\n\t\t  systems",
+      "year": "2010",
+      "venue": "Proc. of the IP Based Electronics System Conference,\n\t\t  (IPSOC)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A real-time application design methodology for MPSoCs",
+      "year": "2009",
+      "venue": "Proc. of Design, Automation and Test in Europe (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Multi-level fault modeling for transaction-level\n\t\t  specifications",
+      "year": "2009",
+      "venue": "Proc. of ACM Great Lakes symposium on VLSI (GLSVLSI)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "ReSP: A Nonintrusive Transaction-Level Reflective MPSoC\n\t\t  Simulation Platform for Design Space Exploration",
+      "year": "2009",
+      "venue": "Computer-Aided Design of Integrated Circuits and Systems,\n\t\t  IEEE Transactions on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Power-Efficient Methodology for Mapping Applications on\n\t\t  Multi-Processor, System-on-Chip Architectures",
+      "year": "2008",
+      "venue": "VLSI-SoC: Research Trends in VLSI and Systems on Chip",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Concurrency emulation and analysis of parallel\n\t\t  applications for multi-processor system-on-chip\n\t\t  co-design",
+      "year": "2008",
+      "venue": "Proc. of the Intl. Conference HW/SW Codesign and System\n\t\t  Synthesis, CODES+ISSS",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "High-Level Modeling and Exploration of Reconfigurable\n\t\t  MPSoCs",
+      "year": "2008",
+      "venue": "Proc. of the NASA/ESA Adaptive Hardware and Systems\n\t\t  Conference (AHS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "ReSP: A design and validation tool for Data Systems",
+      "year": "2008",
+      "venue": "Proc of the Eurospace Conference on Data Systems for\n\t\t  Aerospace (DASIA)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Smart Behavioral Netlist Simulation for SEU Protection\n\t\t  Verification",
+      "year": "2008",
+      "venue": "Proc. of the Workshop on Radiation Effects on Components\n\t\t  and Systems (RADECS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "A Framework for Reliability Assessment and Enhancement in\n\t\t  Multi-Processor Systems-On-Chip",
+      "year": "2007",
+      "venue": "Proc. of the 22nd IEEE Intl. Symposium on Defect and\n\t\t  Fault-Tolerance in VLSI Systems, 2007. (DFT)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Multi-Accuracy Power and Performance Transaction-Level\n\t\t  Modeling",
+      "year": "2007",
+      "venue": "Computer-Aided Design of Integrated Circuits and Systems,\n\t\t  IEEE Transactions on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "An Application Mapping Methodology and Case Study for\n\t\t  Multi-Processor On-Chip Architectures",
+      "year": "2006",
+      "venue": "Proc. IFIP Intl. Conference on Very Large Scale\n\t\t  Integration (VLSI-SoC)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Decision-theoretic exploration of multi-Processor\n\t\t  platforms",
+      "year": "2006",
+      "venue": "Proceedings of the 4th Intl. Conference HW/SW Codesign and\n\t\t  System Synthesis (CODES+ISSS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Exploiting TLM and Object Introspection for System-Level\n\t\t  Simulation",
+      "year": "2006",
+      "venue": "Proc. of Design, Automation and Test in Europe (DATE)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Parallel programming models for a multiprocessor SoC\n\t\t  platform applied to networking and multimedia",
+      "year": "2006",
+      "venue": "Very Large Scale Integration (VLSI) Systems, IEEE\n\t\t  Transactions on",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Plug-in of power models in the StepNP exploration\n\t\t  platform: analysis of power/performance trade-offs",
+      "year": "2004",
+      "venue": "Proc. of the Intl. Conference on Compilers, Architecture,\n\t\t  and Synthesis for Embedded Systems (CASES)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Modeling assembly instruction timing in superscalar\n\t\t  architectures",
+      "year": "2002",
+      "venue": "Proc. of the 15th Intl. Symposium on System Synthesis\n\t\t  (ISSS), 2002",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "An assembly-level execution-time model for pipelined\n\t\t  architectures",
+      "year": "2001",
+      "venue": "Proceedings of the IEEE/ACM Intl. Conference on Computer\n\t\t  Aided Design (ICCAD)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "Dynamic modeling of inter-instruction effects for\n\t\t  execution time estimation",
+      "year": "2001",
+      "venue": "Proceedings of the 14th Intl. Symposium on System\n\t\t  Synthesis (ISSS)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    },
+    {
+      "title": "From Dust to Stardust: A Collaborative 3D Virtual Museum\n\t\t  of Computer Science",
+      "year": "2001",
+      "venue": "Proc. of the Intl. Cultural Heritage Informatics Meeting\n\t\t  Conference (ICHIM)",
+      "doi": "",
+      "authors": "Giovanni Beltrame et al.",
+      "source_orcid": "0000-0001-9755-8630"
+    }
+  ]
+}

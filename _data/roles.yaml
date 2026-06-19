@@ -1,0 +1,14 @@
+# Role groups shown on the People page, in this order.
+# `key` must match the `role:` field in src/people/*.md files.
+- key: faculty
+  label: Principal Investigators
+- key: research_associate
+  label: Research Associates
+- key: postdoc
+  label: Postdoctoral Researchers
+- key: phd
+  label: PhD Students
+- key: msc
+  label: "Master's Students"
+- key: intern
+  label: Interns & Undergraduate Researchers

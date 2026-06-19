@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: Research Projects
+permalink: /projects/
+---
+
+<div class="page-header">
+  <div class="section-label">Research</div>
+  <h1>Research Projects</h1>
+  <p>Our work spans robot autonomy, swarm intelligence, field robotics, and software engineering for robotic systems.</p>
+</div>
+
+<!-- RESEARCH AREAS OVERVIEW -->
+<section style="background: var(--surface);">
+  <div class="section-label reveal">Research Areas</div>
+  <h2 class="reveal">Where We Push<br>the Frontier</h2>
+  <div class="research-grid reveal">
+    {% for project in projects | featured %}
+      <div class="research-card">
+        <div class="research-icon">{{ project.icon | safe }}</div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ACTIVE PROJECTS
+<section class="projects-section">
+  <div class="section-label reveal">Active Projects</div>
+  <h2 class="reveal">Current Research</h2>
+  <div class="projects-grid reveal">
+    {% for project in projects | active %}
+      <div class="project-card">
+        <div class="project-img">
+          {% if project.image %}
+            <img src="{{ ('/assets/images/projects/' + project.image) | url }}" alt="{{ project.title }}">
+          {% else %}
+            <div class="project-img-placeholder">PROJECT IMAGE</div>
+          {% endif %}
+        </div>
+        <div class="project-body">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          {% if project.tags %}
+            <div class="project-tags">
+              {% for tag in project.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="project-links">
+            {% if project.github %}
+              <a href="{{ project.github }}" target="_blank" class="project-link">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-right:4px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Code
+              </a>
+            {% endif %}
+            {% if project.paper_doi %}
+              <a href="https://doi.org/{{ project.paper_doi }}" target="_blank" class="project-link">Paper</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>-->

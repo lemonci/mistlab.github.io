@@ -1,0 +1,25 @@
+# Teaching — courses offered by MIST Lab faculty
+# code: course identifier displayed in amber mono font
+# level: shown as part of the code label
+# link: optional course page URL
+
+- code: INF8422
+  level: Graduate
+  title: Robot Perception and Spatial AI
+  description: >
+    Foundations of robotic perception, including sensor data processing, probabilistic inference, SLAM, 3D representations, uncertainty modeling, simulation, and perception for manipulation and multi-agent systems.
+  link: "https://www.polymtl.ca/programmes/cours/perception-robotique-et-intelligence-spatiale"
+
+- code: INF6805E
+  level: Graduate
+  title: "Swarm Intelligence"
+  description: >
+    Multi-agent consensus and collective decision-making. Optimization by swarm intelligence: ant colony optimization, particle swarm optimization.
+  link: "https://www.polymtl.ca/programmes/cours/swarm-intelligence"
+
+- code: INF3995
+  level: Undergraduate
+  title: Projet de conception d'un syst. informatique
+  description: >
+    Core robotics concepts with hands-on lab projects using real hardware.
+  link: "https://www.polymtl.ca/programmes/cours/projet-de-conception-dun-syst-informatique"

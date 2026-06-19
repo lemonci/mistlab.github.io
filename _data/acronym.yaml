@@ -1,0 +1,33 @@
+# The MIST acronym has no fixed meaning — that's the joke.
+# The homepage hero cycles through these words (one letter changes every
+# 3 seconds). The FIRST word of each list is shown on page load, so keep
+# a reasonably serious one at the top. Add as many words as you like.
+m:
+  - Multi-robot
+  - Making
+  - Mapping
+  - Mars
+  - Multi-agent
+  - Magnificent
+  - Mission-critical
+i:
+  - Intelligent
+  - Innovative
+  - Interplanetary
+  - Improbable
+  - Inference
+  - Indestructible
+s:
+  - Systems
+  - Swarm
+  - Space
+  - Subterranean
+  - Spectacular
+  - Self-organizing
+t:
+  - Technology
+  - Tasks
+  - Teamwork
+  - Tinkering
+  - Telemetry
+  - Trajectory

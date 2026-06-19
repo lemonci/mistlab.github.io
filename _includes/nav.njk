@@ -1,0 +1,19 @@
+<nav>
+  <a href="{{ '/' | url }}" class="nav-logo">
+    <img src="{{ '/assets/images/lab_logo.svg' | url }}" alt="MIST Lab" style="height:52px;">
+    <span>MIST Lab</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ '/projects/' | url }}" {% if page.url == '/projects/' %}class="active"{% endif %}>Research</a></li>
+    <li><a href="{{ '/people/' | url }}" {% if page.url and '/people/' in page.url %}class="active"{% endif %}>People</a></li>
+    <li><a href="{{ '/' | url }}#missions">Missions</a></li>
+    <li><a href="{{ '/publications/' | url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>Publications</a></li>
+    <li><a href="{{ '/news/' | url }}" {% if page.url == '/news/' %}class="active"{% endif %}>News</a></li>
+    <li><a href="{{ '/teaching/' | url }}" {% if page.url == '/teaching/' %}class="active"{% endif %}>Teaching</a></li>
+  </ul>
+  <a href="{{ site.github }}" target="_blank" class="nav-cta" style="background:transparent; border:1px solid rgba(255,255,255,0.2); color:var(--text); display:flex; align-items:center; gap:6px; margin-right:6px; padding:7px 12px; font-size:11px;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    GitHub
+  </a>
+  <a href="{{ '/' | url }}#contact" class="nav-cta" style="white-space:nowrap;">Join Us</a>
+</nav>

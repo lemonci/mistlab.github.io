@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: News
+permalink: /news/
+---
+
+<div class="page-header">
+  <div class="section-label">News</div>
+  <h1>Latest from the Lab</h1>
+  <p>Field missions, publications, new equipment, and announcements from MIST Lab.</p>
+</div>
+
+<section id="news" style="background: var(--surface);">
+  <div class="news-grid reveal">
+    {% for item in news | sortByDate %}
+      <div class="news-card">
+        <div class="news-img">
+          <img src="{{ ('/assets/images/missions/' + item.image) | url }}" alt="{{ item.title }}">
+        </div>
+        <div class="news-body">
+          <div class="news-date">{{ item.date }}</div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.summary }}</p>
+          {% if item.link %}
+            <a href="{{ item.link }}" target="_blank" class="news-tag">Read more →</a>
+          {% elif item.tag %}
+            <span class="news-tag">→ {{ item.tag }}</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

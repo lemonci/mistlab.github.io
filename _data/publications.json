@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T18:25:16.569Z",
+  "generated_at": "2026-06-22T04:34:50.292Z",
   "total": 88,
   "publications": [
     {
@@ -223,7 +223,7 @@
       "year": "2021",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2021.3063992",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "M. Moussa, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -231,7 +231,7 @@
       "year": "2020",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2020.2967331",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "H. Zheng, J. Panerati, G. Beltrame, A. Prorok",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -255,7 +255,7 @@
       "year": "2020",
       "venue": "IEEE Robotics & Automation Magazine",
       "doi": "https://doi.org/10.1109/MRA.2019.2940413",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "D. St-Onge, M. Kaufmann, J. Panerati, B. Ramtoula, Y. Cao, E. B. Coffey, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {

@@ -6,6 +6,12 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
 
+  // Collection: people (built from the directory, so the marker tag doesn't
+  // leak into each person's research `tags`)
+  eleventyConfig.addCollection("people", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/people/*.md")
+  );
+
   // Filter: limit array length
   eleventyConfig.addFilter("limit", (arr, limit) =>
     Array.isArray(arr) ? arr.slice(0, limit) : []

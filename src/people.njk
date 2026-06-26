@@ -95,7 +95,7 @@ permalink: /people/
     <tbody>
       {% for alum in alumni %}
         <tr>
-          <td>{{ alum.name }}</td>
+          <td>{% if alum.linkedin %}<a href="{{ alum.linkedin }}" target="_blank" rel="noopener">{{ alum.name }}</a>{% else %}{{ alum.name }}{% endif %}</td>
           <td>{{ alum.role }}{% if alum.year %} ({{ alum.year }}){% endif %}</td>
           <td>{{ alum.now_at or "—" }}</td>
         </tr>

@@ -5,6 +5,8 @@
 #         linkedin (optional)
 # A `linkedin:` URL makes the alumnus's name a link in the People table.
 # These were back-filled from the legacy `src` branch; many alumni have none.
+- { name: Hanqing Zhao, role: Postdoctoral Researcher, now_at: "Université Laval (Assistant Professor)", linkedin: "https://www.linkedin.com/in/haniqngzhaoulb/" }
+- { name: Arnaud Brignol, role: postdoctoral researcher, now_at: "Numalogics (AI Research Scientist)", linkedin: "https://www.linkedin.com/in/arnaud-brignol/" }
 - { name: Fang Wu, role: Postdoctoral Fellow, now_at: "Venti Technologies (Senior Research Scientist)", linkedin: "https://www.linkedin.com/in/fang-wu-11015637/" }
 - { name: Ivan Svogor, role: Postdoctoral Researcher, now_at: "Siemens (Research And Development Engineer)", linkedin: "http://www.linkedin.com/in/isvogor" }
 - { name: Christophe Marcel Trouillefou, role: Postdoctoral Researcher }
@@ -21,8 +23,12 @@
 - { name: Olfat I. El-Mahi, role: PhD Student, now_at: "Thales (Software Developer)", linkedin: "https://www.linkedin.com/in/olfat-el-mahi-aa53bb3b/" }
 - { name: Majda Moussa, role: PhD Student, now_at: "Université de Montréal (Artificial Intelligence Consultant)", linkedin: "https://www.linkedin.com/in/majda-moussa-25472116a/" }
 - { name: Chao Chen, role: PhD Student, now_at: "Shenzhen Institutes of Advanced Technology (Associate Researcher)", linkedin: "https://www.linkedin.com/pub/chao-chen/21/596/1a0" }
-- { name: Guannan Li, role: Exchange PhD Student }
-- { name: Dong Wang, role: PhD Student }
+- { name: Guannan Li, role: Exchange PhD Student, now_at: "Huzhou Institute of Zhejiang University (Vice President)" }
+- { name: Dong Wang, role: PhD Student, now_at: "Guizhou Provincial Laboratory of Intelligent Equipment" }
+- { name: Alice Lemieux-Bourque, role: Master Student, linkedin: "https://www.linkedin.com/in/alice-lemieux-bourque-73ba2a1b7/" }
+- { name: Théo Gachet, role: Master Student, now_at: "La Caisse (Quantitative Research Intern)", linkedin: "https://www.linkedin.com/in/theo-gachet/" }
+- { name: Milo Sobral, role: Master Student, now_at: "Mila - Quebec Artificial Intelligence Institute (Research Scientist)", linkedin: "https://www.linkedin.com/in/milo-sobral/" }
+- { name: Feng Yang Chen, role: Master Student, now_at: "Canadian Space Agency (System Engineer)", linkedin: "https://www.linkedin.com/in/feng-yang-chen/" }
 - { name: David Vielfaure, role: Master Student, now_at: "Jasper (Software developer)", linkedin: "https://www.linkedin.com/in/david-vielfaure-a0106a136/" }
 - { name: Nicolas Valenchon, role: Master Student, now_at: "Alstom (Software architect)", linkedin: "https://www.linkedin.com/in/nicolas-valenchon-254b7914a" }
 - { name: Benjamin Ramtoula, role: Master Student, now_at: "University of Oxford (Post-doc Researcher)", linkedin: "https://www.linkedin.com/in/benjamin-ramtoula-075a2a10a/" }
@@ -35,6 +41,7 @@
 - { name: Erica Bugden, role: Research Assistant, linkedin: "https://www.linkedin.com/in/erica-bugden/" }
 - { name: Moritz Sperling, role: Intern (Master's Thesis), now_at: "Optonic GmbH (Computer Vision Engineer)", linkedin: "https://www.linkedin.com/in/moritz-sperling-1b052215b/" }
 - { name: Roberta Piscitelli, role: PBEEE Visiting Scholar, now_at: "Salesforce (Lead Solution Engineer)", linkedin: "https://www.linkedin.com/in/robertapiscitelli/" }
+- { name: Marco Marzi, role: Intern, now_at: "E80 Group (Research And Development Engineer)", linkedin: "https://www.linkedin.com/in/marco-marzi-85b3392b0/"}
 - { name: Nathalie Majcherczyk, role: Graduate Intern, now_at: "Amazon Robotics (Applied Scientist)", linkedin: "https://be.linkedin.com/in/nathalie-majcherczyk-b87b60122" }
 - { name: Christophe Bédard, role: Intern, now_at: "KUKA(Senior Software Engineer)", linkedin: "https://www.linkedin.com/in/christophebourquebedard/" }
 - { name: Emir Khaled Belhaddad, role: Intern, now_at: "Desjardins (Developer)", linkedin: "https://www.linkedin.com/in/emir-khaled-belhaddad/" }
@@ -49,7 +56,7 @@
 - { name: Adam Lee-Brown, role: Intern }
 - { name: Yixiu Liu, role: Research Intern, now_at: "Google (Software Engineer)", linkedin: "https://www.linkedin.com/in/yixiu-liu/" }
 - { name: Chong Yeh Sai, role: Research Intern , now_at: "Ever AI Technologies (Founding Partner)", linkedin: "https://www.linkedin.com/in/cysai/" }
-- { name: Deboleena Roy, role: MITACS Globalink Intern, now_at: "Meta logo (Staff Research Scientist)", linkedin: "https://www.linkedin.com/in/deboleenaroy/" }
+- { name: Deboleena Roy, role: MITACS Globalink Intern, now_at: "Meta (Staff Research Scientist)", linkedin: "https://www.linkedin.com/in/deboleenaroy/" }
 - { name: Ismail Ben Ali Ouriaghli, role: UPIR Intern, now_at: "Upgrade, Inc. (Senior Software Developer)", linkedin: "https://www.linkedin.com/in/ismailour/" }
 - { name: Mikael Capelle, role: Intern, now_at: "Thales Alenia Space (Operations Research Analyst)",  linkedin: "https://www.linkedin.com/in/mikael-capelle/" }
 - { name: Bianca Angotti, role: Intern, now_at: "Microquest Inc. (Senior Software Developer)", linkedin: "https://www.linkedin.com/in/bianca-angotti/" }

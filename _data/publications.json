@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T04:29:26.461Z",
+  "generated_at": "2026-07-13T06:26:03.779Z",
   "total": 89,
   "publications": [
     {
@@ -239,7 +239,7 @@
       "year": "2020",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2020.2967331",
-      "authors": "H. Zheng, J. Panerati, G. Beltrame, A. Prorok",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -263,7 +263,7 @@
       "year": "2020",
       "venue": "IEEE Robotics & Automation Magazine",
       "doi": "https://doi.org/10.1109/MRA.2019.2940413",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "D. St-Onge, M. Kaufmann, J. Panerati, B. Ramtoula, Y. Cao, E. B. Coffey, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -271,7 +271,7 @@
       "year": "2020",
       "venue": "Autonomous Robots",
       "doi": "https://doi.org/10.1007/s10514-019-09855-2",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "V. S. Varadharajan, D. St-Onge, B. Adams, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -295,7 +295,7 @@
       "year": "2019",
       "venue": "Swarm Intelligence",
       "doi": "https://doi.org/10.1007/s11721-019-00162-1",
-      "authors": "G. Li, I. Svogor, G. Beltrame",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {

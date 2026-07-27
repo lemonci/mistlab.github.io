@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T06:23:05.558Z",
+  "generated_at": "2026-07-27T06:36:16.761Z",
   "total": 89,
   "publications": [
     {
@@ -127,7 +127,7 @@
       "year": "2024",
       "venue": "ACM / IMS Journal of Data Science",
       "doi": "https://doi.org/10.1145/3592762",
-      "authors": "A. Opipari, J. Pavlasek, C. Chen, S. Wang, K. Desingh, O. C. Jenkins",
+      "authors": "Jana Pavlasek et al.",
       "source_orcid": "0000-0001-6332-2646"
     },
     {
@@ -231,7 +231,7 @@
       "year": "2021",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2021.3063992",
-      "authors": "M. Moussa, G. Beltrame",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -239,7 +239,7 @@
       "year": "2020",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2020.2967331",
-      "authors": "H. Zheng, J. Panerati, G. Beltrame, A. Prorok",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -279,7 +279,7 @@
       "year": "2020",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2020.3006793",
-      "authors": "V. S. Varadharajan, D. St-Onge, B. Adams, G. Beltrame",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -303,7 +303,7 @@
       "year": "2019",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2019.2894852",
-      "authors": "P.-Y. Lajoie, S. Hu, G. Beltrame, L. Carlone",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -319,7 +319,7 @@
       "year": "2018",
       "venue": "IEEE Access",
       "doi": "https://doi.org/10.1109/ACCESS.2018.2866259",
-      "authors": "Y. Cao, M. Li, I. Svogor, S. Wei, G. Beltrame",
+      "authors": "Giovanni Beltrame et al.",
       "source_orcid": "0000-0001-9755-8630"
     },
     {

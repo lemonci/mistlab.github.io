@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T03:55:27.564Z",
+  "generated_at": "2026-08-24T03:59:10.405Z",
   "total": 89,
   "publications": [
     {
@@ -11,7 +11,7 @@
       "source_orcid": "0000-0001-9755-8630"
     },
     {
-      "title": "Influence of Autonomy and Interfaces on Human and Multi-Robot Teams: a Study on Planetary Exploration",
+      "title": "Influence of Autonomy and Interfaces on Human and Multi-Robot Teams: A Study on Planetary Exploration",
       "year": "2026",
       "venue": "ACM Transactions on Human-Robot Interaction",
       "doi": "https://doi.org/10.1145/3822499",

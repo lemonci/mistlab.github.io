@@ -1,7 +1,15 @@
 {
-  "generated_at": "2026-08-24T03:59:10.405Z",
-  "total": 89,
+  "generated_at": "2026-08-31T09:35:05.916Z",
+  "total": 90,
   "publications": [
+    {
+      "title": "E-RGB-D: Real-Time Event-Based Perception with Structured Light",
+      "year": "2026",
+      "venue": "International Journal of Computer Vision",
+      "doi": "https://doi.org/10.1007/s11263-026-03001-z",
+      "authors": "S. E. Marjani Bajestani, G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
     {
       "title": "EA-IPP2n: Energy-Aware Informative Path Planning Algorithm for UAVs",
       "year": "2026",

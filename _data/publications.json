@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T08:46:19.796Z",
+  "generated_at": "2026-09-21T08:47:54.794Z",
   "total": 90,
   "publications": [
     {
@@ -127,7 +127,7 @@
       "year": "2024",
       "venue": "",
       "doi": "https://doi.org/10.1007/978-3-031-70932-6_4",
-      "authors": "Pierre-Yves Lajoie et al.",
+      "authors": "A. Moroncelli, A. Pacheco, V. Strobel, P.-Y. Lajoie, M. Dorigo, A. Reina",
       "source_orcid": "0000-0002-7495-8567"
     },
     {
@@ -135,7 +135,7 @@
       "year": "2024",
       "venue": "ACM / IMS Journal of Data Science",
       "doi": "https://doi.org/10.1145/3592762",
-      "authors": "Jana Pavlasek et al.",
+      "authors": "A. Opipari, J. Pavlasek, C. Chen, S. Wang, K. Desingh, O. C. Jenkins",
       "source_orcid": "0000-0001-6332-2646"
     },
     {
@@ -151,7 +151,7 @@
       "year": "2024",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2024.3375708",
-      "authors": "Jana Pavlasek et al.",
+      "authors": "J. Pavlasek, J. J. Z. Mah, R. Xu, O. C. Jenkins, F. Ramos",
       "source_orcid": "0000-0001-6332-2646"
     },
     {
@@ -247,7 +247,7 @@
       "year": "2020",
       "venue": "IEEE Robotics and Automation Letters",
       "doi": "https://doi.org/10.1109/LRA.2020.2967331",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "H. Zheng, J. Panerati, G. Beltrame, A. Prorok",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -295,7 +295,7 @@
       "year": "2019",
       "venue": "Autonomous Robots",
       "doi": "https://doi.org/10.1007/s10514-018-9807-5",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "G. Li, D. St-Onge, C. Pinciroli, A. Gasparri, E. Garone, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -319,7 +319,7 @@
       "year": "2018",
       "venue": "PLOS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0202337",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "J. Panerati, N. Schwind, S. Zeltner, K. Inoue, G. Beltrame",
       "source_orcid": "0000-0001-9755-8630"
     },
     {
@@ -375,7 +375,7 @@
       "year": "2015",
       "venue": "",
       "doi": "https://doi.org/10.7287/peerj.preprints.1219v2",
-      "authors": "Giovanni Beltrame et al.",
+      "authors": "R. Saborido, V. V. Arnaoudova, G. Beltrame, F. Khomh, G. Antoniol",
       "source_orcid": "0000-0001-9755-8630"
     },
     {

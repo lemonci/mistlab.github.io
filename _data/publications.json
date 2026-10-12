@@ -1,7 +1,15 @@
 {
-  "generated_at": "2026-10-05T10:15:28.551Z",
-  "total": 90,
+  "generated_at": "2026-10-12T10:33:42.320Z",
+  "total": 91,
   "publications": [
+    {
+      "title": "Communications Among Agents",
+      "year": "2026",
+      "venue": "",
+      "doi": "https://doi.org/10.1007/978-3-642-41610-1_228-1",
+      "authors": "G. Beltrame",
+      "source_orcid": "0000-0001-9755-8630"
+    },
     {
       "title": "E-RGB-D: Real-Time Event-Based Perception with Structured Light",
       "year": "2026",
